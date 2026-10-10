@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" width="100" height="120">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <!-- Crisp White Sheet Body -->
+  <path d="M12,4 C7.5,4 4,7.5 4,12 L4,108 C4,112.5 7.5,116 12,116 L88,116 C92.5,116 96,112.5 96,108 L96,36 L64,4 L12,4 Z" fill="#FFFFFF" filter="url(#shadow)"/>
+  <!-- Folded Corner Flap -->
+  <path d="M64,4 L64,28 C64,32.4 67.6,36 72,36 L96,36 Z" fill="#CBD5E1"/>
+  <!-- Red PDF Badge -->
+  <rect x="10" y="64" width="80" height="38" rx="6" fill="#E11D48"/>
+  <!-- Bold White PDF Text -->
+  <text x="50" y="92" text-anchor="middle" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="24" letter-spacing="2">PDF</text>
+</svg>
