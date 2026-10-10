@@ -162,7 +162,7 @@ function initArchitectureStepper() {
           <div style="font-size: 0.7rem; font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-faint); margin-bottom: 0.85rem;">
             Parallel Multi-Branch Dispatches (Non-Blocking)
           </div>
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 0.75rem;">
+          <div class="subtasks-grid">
             ${data.subtasks.map(st => `
               <div style="padding: 0.85rem; border-radius: 0.85rem; background: rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.05); display: flex; align-items: flex-start; gap: 0.75rem;">
                 <div style="padding: 0.4rem 0.6rem; border-radius: 0.5rem; font-size: 0.75rem; font-family: var(--font-mono); font-weight: 600; border: 1px solid;" class="${st.color}">
@@ -407,7 +407,7 @@ function initResearchComponents() {
         `).join('')}
       </div>
 
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; padding-top: 0.5rem;">
+      <div class="comp-insights-grid">
         <div style="padding: 1.5rem; border-radius: 1rem; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05);">
           <div style="font-size: 0.75rem; font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
             <span style="color: var(--emerald);">📈</span> Key Research Insights & Findings
