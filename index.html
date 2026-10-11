@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Faceo | FacialAnalysis-LK • SLIIT Undergraduate Research</title>
   <meta name="description" content="A Multi-Task Evaluation of Emotion, Facial Conditions, and Deepfake Detection Towards Reliable Facial Analysis for Sri Lankan Faces. SLIIT Faculty of Computing Research Project.">
   
@@ -11,8 +11,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   
-  <!-- Vanilla CSS Style -->
-  <link rel="stylesheet" href="css/style.css">
+  <!-- Vanilla CSS Style (cache-busted) -->
+  <link rel="stylesheet" href="css/style.css?v=2.5">
   <link rel="icon" type="image/png" href="images/faceo-logo.png">
 </head>
 <body>
@@ -182,8 +182,8 @@
             </div>
           </div>
 
-          <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.75rem; font-family: var(--font-mono); color: var(--text-dim); background: rgba(255,255,255,0.02); border: 1px solid var(--border-subtle); padding: 0.5rem 1rem; border-radius: 0.75rem; width: fit-content;">
-            <span style="width: 8px; height: 8px; border-radius: 50%; background: #10b981; box-shadow: 0 0 10px #10b981;"></span>
+          <div class="status-pill-faceo">
+            <span style="width: 8px; height: 8px; border-radius: 50%; background: #10b981; box-shadow: 0 0 10px #10b981; flex-shrink: 0;"></span>
             <span>Multi-Task Facial Intelligence Platform</span>
           </div>
         </div>
@@ -1523,7 +1523,7 @@
     </div>
   </div>
 
-  <!-- Vanilla JavaScript Logic -->
-  <script src="js/main.js"></script>
+  <!-- Vanilla JavaScript Logic (cache-busted) -->
+  <script src="js/main.js?v=2.5"></script>
 </body>
 </html>

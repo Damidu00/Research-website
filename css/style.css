@@ -50,6 +50,9 @@ html {
   color: var(--text-white);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
 }
 
 body {
@@ -57,6 +60,8 @@ body {
   color: var(--text-white);
   min-height: 100vh;
   overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
   position: relative;
 }
 
@@ -1834,3 +1839,142 @@ img, svg {
     padding-bottom: 3.5rem;
   }
 }
+
+/* ─── Global Mobile Overflow Prevention & Touch Optimization ─── */
+.objectives-grid > *,
+.docs-grid > *,
+.subtasks-grid > *,
+.comp-insights-grid > *,
+.footer-grid > *,
+.team-grid > *,
+.supervisor-grid > *,
+.grid-3-col > *,
+.grid-4-col > *,
+.pillars-grid > *,
+.pipeline-stepper > * {
+  min-width: 0 !important;
+  max-width: 100% !important;
+}
+
+.bibtex-box {
+  min-width: 0 !important;
+  max-width: 100% !important;
+  overflow-x: auto !important;
+  -webkit-overflow-scrolling: touch;
+}
+
+.bibtex-box pre {
+  white-space: pre-wrap !important;
+  word-break: break-all !important;
+  overflow-wrap: anywhere !important;
+  max-width: 100% !important;
+  font-size: 0.65rem !important;
+}
+
+.status-pill-faceo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.72rem;
+  font-family: var(--font-mono);
+  color: var(--text-dim);
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-subtle);
+  padding: 0.45rem 0.85rem;
+  border-radius: 0.75rem;
+  max-width: 100%;
+  flex-wrap: wrap;
+  line-height: 1.4;
+}
+
+@media (max-width: 640px) {
+  .glow-ambient {
+    display: none !important;
+  }
+
+  .hero-title {
+    font-size: clamp(1.4rem, 6vw, 1.85rem) !important;
+    line-height: 1.25 !important;
+    margin: 0.5rem 0 1rem 0 !important;
+  }
+
+  .hero-title-chunk {
+    display: inline !important;
+    white-space: normal !important;
+  }
+
+  .hero-subtitle {
+    font-size: 0.88rem !important;
+    line-height: 1.5 !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .section-header .section-title {
+    font-size: 1.55rem !important;
+    line-height: 1.25 !important;
+  }
+
+  .section-header .section-desc {
+    font-size: 0.85rem !important;
+    line-height: 1.5 !important;
+  }
+
+  .what-is-faceo-card,
+  .hero-box-grid,
+  .glass-card-padded,
+  .step-detail-card,
+  .challenge-card {
+    padding: 1.15rem 1rem !important;
+    border-radius: 1.15rem !important;
+  }
+
+  .card-top-bar {
+    gap: 0.85rem !important;
+    margin-bottom: 1.25rem !important;
+    padding-bottom: 1.25rem !important;
+  }
+
+  .badge {
+    white-space: normal !important;
+    text-align: center;
+    max-width: 100% !important;
+    line-height: 1.35;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem !important;
+  }
+
+  .team-card {
+    padding: 1.15rem !important;
+  }
+
+  .team-photo-frame {
+    height: 13.5rem !important;
+  }
+
+  .supervisor-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem !important;
+  }
+
+  .supervisor-card {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    padding: 1.15rem !important;
+  }
+
+  .supervisor-photo-frame {
+    width: 5rem !important;
+    height: 5rem !important;
+    margin-bottom: 0.5rem;
+  }
+
+  .tab-pills-row,
+  .tech-filter-row {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
