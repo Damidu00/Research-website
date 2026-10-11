@@ -12,6 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initDocumentsModal();
   initCitationCopy();
   initScrollToTop();
+  initContactForm();
+  initScrollReveal();
 });
 
 /* ─────────────────────────────────────────────────────────────
@@ -24,7 +26,7 @@ function initNavigation() {
   const mobileDrawer = document.getElementById('mobile-drawer');
   const mobileLinks = document.querySelectorAll('.mobile-nav-link');
 
-  const sectionIds = ['overview', 'problem', 'architecture', 'components', 'tech-stack', 'documents', 'team'];
+  const sectionIds = ['overview', 'domain', 'problem', 'architecture', 'components', 'tech-stack', 'milestones', 'documents', 'team', 'contact'];
 
   // Scroll event for sticky glass header and section spy
   window.addEventListener('scroll', () => {
@@ -46,11 +48,14 @@ function initNavigation() {
     }
 
     navLinks.forEach((link) => {
-      const href = link.getAttribute('href').replace('#', '');
-      if (href === currentId) {
-        link.classList.add('active');
-      } else {
-        link.classList.remove('active');
+      const href = link.getAttribute('href');
+      if (href && href.startsWith('#')) {
+        const id = href.replace('#', '');
+        if (id === currentId) {
+          link.classList.add('active');
+        } else {
+          link.classList.remove('active');
+        }
       }
     });
   });
@@ -493,7 +498,7 @@ const DOCS_METADATA = {
     fileSize: '413 KB',
     format: 'PDF',
     date: 'Semester 1 • Milestone 1',
-    filePath: 'docs/taf.pdf',
+    filePath: 'https://drive.google.com/file/d/1IuGWnAsykhD6w-9Fu44AJ5OXkoPjKet6/view?usp=sharing',
     driveUrl: 'https://drive.google.com/file/d/1IuGWnAsykhD6w-9Fu44AJ5OXkoPjKet6/view?usp=sharing',
     previewUrl: 'https://drive.google.com/file/d/1IuGWnAsykhD6w-9Fu44AJ5OXkoPjKet6/preview',
     abstract: 'Official Topic Assessment Form (TAF) submitted to the SLIIT Faculty of Computing. Establishes the formal research scope, problem justification for Sri Lankan facial demographic analysis, low-light illumination challenges, and supervisor alignment for undergraduate research.',
@@ -511,7 +516,7 @@ const DOCS_METADATA = {
     fileSize: '2.1 MB',
     format: 'PDF',
     date: 'Semester 1 • Proposal Defense',
-    filePath: 'docs/proposal-presentation.pdf',
+    filePath: 'https://drive.google.com/file/d/1mGWLk7-gGMFgGTmZJkN52PUpsZfi_JPn/view?usp=sharing',
     driveUrl: 'https://drive.google.com/file/d/1mGWLk7-gGMFgGTmZJkN52PUpsZfi_JPn/view?usp=sharing',
     previewUrl: 'https://drive.google.com/file/d/1mGWLk7-gGMFgGTmZJkN52PUpsZfi_JPn/preview',
     abstract: 'Official Research Project Proposal presentation deck presented to the SLIIT academic examination panel, detailing the multi-task research methodology, demographic dataset gaps, low-light face enhancement, client-side demographics, condition detection, and deepfake verification.',
@@ -529,7 +534,7 @@ const DOCS_METADATA = {
     fileSize: '1.14 MB',
     format: 'PDF',
     date: 'Semester 1 • Proposal Submission',
-    filePath: 'docs/IT22541970_Damidu.pdf',
+    filePath: 'https://drive.google.com/file/d/1BLbvTrISPrssQXHxydc_1HlEtarc7JCk/view?usp=sharing',
     driveUrl: 'https://drive.google.com/file/d/1BLbvTrISPrssQXHxydc_1HlEtarc7JCk/view?usp=sharing',
     previewUrl: 'https://drive.google.com/file/d/1BLbvTrISPrssQXHxydc_1HlEtarc7JCk/preview',
     abstract: 'Research proposal addressing emotion recognition vulnerabilities under low-light illumination on Sri Lankan faces. Integrates SSD MobileNet V3, adaptive L-channel CLAHE, and a custom CNN architecture.',
@@ -546,7 +551,7 @@ const DOCS_METADATA = {
     fileSize: '11.16 MB',
     format: 'PDF',
     date: 'Semester 1 • Proposal Submission',
-    filePath: 'docs/IT22254252_Gagana.pdf',
+    filePath: 'https://drive.google.com/file/d/1IgmpnJj8aHnALoRRuCxK-WSsFSzE7UfR/view?usp=sharing',
     driveUrl: 'https://drive.google.com/file/d/1IgmpnJj8aHnALoRRuCxK-WSsFSzE7UfR/view?usp=sharing',
     previewUrl: 'https://drive.google.com/file/d/1IgmpnJj8aHnALoRRuCxK-WSsFSzE7UfR/preview',
     abstract: 'Research proposal focusing on client-side, zero-cloud edge inference for age and gender estimation using Face-API.js and TensorFlow.js tailored for South Asian demographic features.',
@@ -563,7 +568,7 @@ const DOCS_METADATA = {
     fileSize: '2.14 MB',
     format: 'PDF',
     date: 'Semester 1 • Proposal Submission',
-    filePath: 'docs/IT22278876_Sanjana.pdf',
+    filePath: 'https://drive.google.com/file/d/1OJi84voT3KLS714hmv0ct7nGcxfDNr_7/view?usp=sharing',
     driveUrl: 'https://drive.google.com/file/d/1OJi84voT3KLS714hmv0ct7nGcxfDNr_7/view?usp=sharing',
     previewUrl: 'https://drive.google.com/file/d/1OJi84voT3KLS714hmv0ct7nGcxfDNr_7/preview',
     abstract: 'Research proposal on fine-grained dermatological facial condition detection (Acne, Wrinkles, Moles, Age Spots) utilizing YOLO11n fine-tuned on localized Sri Lankan clinical imagery.',
@@ -580,7 +585,7 @@ const DOCS_METADATA = {
     fileSize: '1.05 MB',
     format: 'PDF',
     date: 'Semester 1 • Proposal Submission',
-    filePath: 'docs/IT22276728_Ruchira.pdf',
+    filePath: 'https://drive.google.com/file/d/1xR4RMzxbxJVRvqOkCOcK_3TZgkhzGDHS/view?usp=sharing',
     driveUrl: 'https://drive.google.com/file/d/1xR4RMzxbxJVRvqOkCOcK_3TZgkhzGDHS/view?usp=sharing',
     previewUrl: 'https://drive.google.com/file/d/1xR4RMzxbxJVRvqOkCOcK_3TZgkhzGDHS/preview',
     abstract: 'Research proposal auditing inductive bias vs transformer self-attention in deepfake detection. Evaluates ResNet-50 vs Swin Transformer across 2,000 unseen Sri Lankan deepfakes.',
@@ -597,7 +602,7 @@ const DOCS_METADATA = {
     fileSize: '1.63 MB',
     format: 'PDF',
     date: 'Semester 1 • Progress Review 1',
-    filePath: 'docs/pp1-presentation.pdf',
+    filePath: 'https://drive.google.com/file/d/1J3mx6PPruc_WPiP2LcsCN-PBfmfC4NeX/view?usp=sharing',
     driveUrl: 'https://drive.google.com/file/d/1J3mx6PPruc_WPiP2LcsCN-PBfmfC4NeX/view?usp=sharing',
     previewUrl: 'https://drive.google.com/file/d/1J3mx6PPruc_WPiP2LcsCN-PBfmfC4NeX/preview',
     abstract: 'First formal progress presentation (PP1) presented to the SLIIT examination panel. Details intermediate dataset curation, pipeline prototyping, initial CLAHE low-light equalization benchmarks, and preliminary edge runtime measurements.',
@@ -614,7 +619,7 @@ const DOCS_METADATA = {
     fileSize: '3.59 MB',
     format: 'PDF',
     date: 'Semester 2 • Progress Review 2',
-    filePath: 'docs/pp2-presentation.pdf',
+    filePath: 'https://drive.google.com/file/d/1ts5CHj_t86ZrmbO1hQb1Z5OnLG3W8M7Z/view?usp=sharing',
     driveUrl: 'https://drive.google.com/file/d/1ts5CHj_t86ZrmbO1hQb1Z5OnLG3W8M7Z/view?usp=sharing',
     previewUrl: 'https://drive.google.com/file/d/1ts5CHj_t86ZrmbO1hQb1Z5OnLG3W8M7Z/preview',
     abstract: 'Second progress presentation (PP2) detailing model convergence curves, cross-dataset generalization evaluation, ResNet-50 vs Swin Transformer deepfake robustness audits, and integrated multi-task demonstration prototype.',
@@ -631,7 +636,7 @@ const DOCS_METADATA = {
     fileSize: '366 KB',
     format: 'PDF',
     date: 'ICAC 2026 Conference Submission',
-    filePath: 'docs/research-paper.pdf',
+    filePath: 'https://drive.google.com/file/d/13KEmB_HbDrIKQwkLQgdQZP55jm9jFsVP/view?usp=sharing',
     driveUrl: 'https://drive.google.com/file/d/13KEmB_HbDrIKQwkLQgdQZP55jm9jFsVP/view?usp=sharing',
     previewUrl: 'https://drive.google.com/file/d/13KEmB_HbDrIKQwkLQgdQZP55jm9jFsVP/preview',
     abstract: 'Full academic research paper formatted for IEEE ICAC 2026. Formulates the multi-task evaluation framework, comparative demographic audits on South Asian faces, and empirical validation across low illumination, browser edge estimation, condition detection, and deepfake verification.',
@@ -641,6 +646,74 @@ const DOCS_METADATA = {
       'Client-side zero-cloud demographic estimation architecture',
       'ResNet-50 vs Swin-Base 2,000 Sri Lankan deepfake audit',
       'Full ablation study, confusion matrices, and future roadmap'
+    ]
+  },
+  thesisDamidu: {
+    title: 'Draft Thesis — Damidu Dissanayake',
+    subtitle: 'IT22541970 • Facial Emotion Recognition & Illumination Recovery',
+    fileSize: 'Draft PDF',
+    format: 'PDF',
+    date: 'Milestone 07 • 11th October 2026',
+    filePath: 'https://drive.google.com/file/d/1sNXHnEAAsSXxhoyYHsAXa_ALlRlVQIbF/view?usp=sharing',
+    driveUrl: 'https://drive.google.com/file/d/1sNXHnEAAsSXxhoyYHsAXa_ALlRlVQIbF/view?usp=sharing',
+    previewUrl: 'https://drive.google.com/file/d/1sNXHnEAAsSXxhoyYHsAXa_ALlRlVQIbF/preview',
+    abstract: 'Comprehensive draft research thesis evaluating facial emotion recognition under low-light illumination on Sri Lankan faces. Details SSD MobileNet V3 face localization, adaptive L-channel CLAHE enhancement, custom CNN architecture, and empirical evaluation achieving 92.32% accuracy.',
+    topicsCovered: [
+      'Comprehensive Literature Review on demographic & illumination challenges',
+      'Mathematical formulation of CLAHE + Gamma enhancement pipeline',
+      'Convolutional neural network architecture design & hyperparameter tuning',
+      'Empirical validation, confusion matrices, and ablation benchmarks'
+    ]
+  },
+  thesisGagana: {
+    title: 'Draft Thesis — Gagana Perera',
+    subtitle: 'IT22254252 • Browser-Based Age & Gender Estimation',
+    fileSize: 'Draft PDF',
+    format: 'PDF',
+    date: 'Milestone 07 • 11th October 2026',
+    filePath: 'https://drive.google.com/file/d/1Wn-Rh4djYV6XM0NxJ198kjKu1862SHPM/view?usp=sharing',
+    driveUrl: 'https://drive.google.com/file/d/1Wn-Rh4djYV6XM0NxJ198kjKu1862SHPM/view?usp=sharing',
+    previewUrl: 'https://drive.google.com/file/d/1Wn-Rh4djYV6XM0NxJ198kjKu1862SHPM/preview',
+    abstract: 'Comprehensive draft research thesis on client-side, zero-cloud edge inference for age and gender estimation using Face-API.js and TensorFlow.js tailored for South Asian demographic cohorts. Details sub-40ms runtime profiling and biometric privacy architecture.',
+    topicsCovered: [
+      'Zero-cloud biometric inference architecture and privacy preservation',
+      'TensorFlow.js and Face-API.js WebAssembly acceleration pipeline',
+      'Cross-entropy loss analysis across Sri Lankan skin tone distributions',
+      'Live webcam latency profiling and real-world deployment audit'
+    ]
+  },
+  thesisSanjana: {
+    title: 'Draft Thesis — Sanjana Deshan',
+    subtitle: 'IT22278876 • Localized Facial-Condition Detection',
+    fileSize: 'Draft PDF',
+    format: 'PDF',
+    date: 'Milestone 07 • 11th October 2026',
+    filePath: 'https://drive.google.com/file/d/1ygPcwYxZ0eZaDO7qhDypGFYBXl64kS3G/view?usp=sharing',
+    driveUrl: 'https://drive.google.com/file/d/1ygPcwYxZ0eZaDO7qhDypGFYBXl64kS3G/view?usp=sharing',
+    previewUrl: 'https://drive.google.com/file/d/1ygPcwYxZ0eZaDO7qhDypGFYBXl64kS3G/preview',
+    abstract: 'Comprehensive draft research thesis focusing on spatial localization and bounding-box detection of localized facial conditions (Acne, Wrinkles, Moles, Age Spots) utilizing YOLO11n fine-tuned on localized Sri Lankan clinical annotations with Spatial CIoU loss.',
+    topicsCovered: [
+      'Clinical dataset annotation protocol for 1,200+ localized facial lesions',
+      'Ultralytics YOLO11n architecture adaptation and anchor optimization',
+      'Spatial CIoU loss convergence and micro-feature localization',
+      'mAP@50 (52.00%) and 70.83% precision dermatological benchmarking'
+    ]
+  },
+  thesisRuchira: {
+    title: 'Draft Thesis — Ruchira Gunawardhana',
+    subtitle: 'IT22276728 • Deepfake Verification & Forensic Robustness',
+    fileSize: 'Draft PDF',
+    format: 'PDF',
+    date: 'Milestone 07 • 11th October 2026',
+    filePath: 'https://drive.google.com/file/d/1QQASb528RGCp3ASByTyiJq8sqTSXPgmT/view?usp=sharing',
+    driveUrl: 'https://drive.google.com/file/d/1QQASb528RGCp3ASByTyiJq8sqTSXPgmT/view?usp=sharing',
+    previewUrl: 'https://drive.google.com/file/d/1QQASb528RGCp3ASByTyiJq8sqTSXPgmT/preview',
+    abstract: 'Comprehensive draft research thesis auditing inductive bias vs transformer attention across 2,000 unseen Sri Lankan synthetic manipulations. Demonstrates ResNet-50 maintaining 92.55% cross-dataset robustness compared to Swin Transformer performance collapse under domain shifts.',
+    topicsCovered: [
+      'Comparative evaluation: CNN inductive bias vs. Vision Transformer self-attention',
+      'Error Level Analysis (ELA) and forensic frequency domain artifact extraction',
+      '2,000 out-of-distribution Sri Lankan deepfake benchmark dataset curation',
+      'Cross-dataset generalization audits and compression robustness analysis'
     ]
   }
 };
@@ -659,23 +732,15 @@ function initDocumentsModal() {
   const tabDrive = document.getElementById('tab-viewer-drive');
 
   let currentDocKey = null;
-  let activeViewerMode = 'local';
+  let activeViewerMode = 'drive';
 
   function updateIframeSource() {
     const doc = DOCS_METADATA[currentDocKey];
     if (!doc) return;
 
-    if (activeViewerMode === 'local') {
-      // Local PDF rendered directly by browser's native engine
-      modalIframe.src = `${doc.filePath}#view=FitH&toolbar=1`;
-      if (tabLocal) tabLocal.classList.add('active');
-      if (tabDrive) tabDrive.classList.remove('active');
-    } else {
-      // Google Drive cloud preview
-      modalIframe.src = doc.previewUrl;
-      if (tabLocal) tabLocal.classList.remove('active');
-      if (tabDrive) tabDrive.classList.add('active');
-    }
+    modalIframe.src = doc.previewUrl;
+    if (tabDrive) tabDrive.classList.add('active');
+    if (tabLocal) tabLocal.classList.remove('active');
   }
 
   function openModal(docKey) {
@@ -683,7 +748,7 @@ function initDocumentsModal() {
     if (!doc) return;
 
     currentDocKey = docKey;
-    activeViewerMode = 'local'; // Always default to instant, dependable local PDF
+    activeViewerMode = 'drive';
 
     modalTitle.textContent = doc.title;
     modalMeta.textContent = `${doc.format} • ${doc.fileSize} • ${doc.date}`;
@@ -697,16 +762,23 @@ function initDocumentsModal() {
     `).join('');
 
     modalDownloadBtns.forEach(btn => {
-      btn.href = doc.filePath;
+      btn.href = doc.driveUrl;
+      btn.target = '_blank';
+      btn.rel = 'noopener noreferrer';
+      btn.removeAttribute('download');
     });
 
     modalDriveBtns.forEach(btn => {
       btn.href = doc.driveUrl;
+      btn.target = '_blank';
+      btn.rel = 'noopener noreferrer';
     });
 
     const directPdfLink = document.getElementById('modal-direct-pdf-link');
     if (directPdfLink) {
-      directPdfLink.href = doc.filePath;
+      directPdfLink.href = doc.driveUrl;
+      directPdfLink.target = '_blank';
+      directPdfLink.rel = 'noopener noreferrer';
     }
 
     updateIframeSource();
@@ -724,8 +796,8 @@ function initDocumentsModal() {
 
   if (tabLocal) {
     tabLocal.addEventListener('click', () => {
-      activeViewerMode = 'local';
-      updateIframeSource();
+      const doc = DOCS_METADATA[currentDocKey];
+      if (doc) window.open(doc.driveUrl, '_blank');
     });
   }
 
@@ -741,8 +813,8 @@ function initDocumentsModal() {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
       const mobileDrawer = document.getElementById('mobile-drawer');
-      if (mobileDrawer && mobileDrawer.classList.contains('active')) {
-        mobileDrawer.classList.remove('active');
+      if (mobileDrawer && mobileDrawer.classList.contains('open')) {
+        mobileDrawer.classList.remove('open');
       }
       openModal(btn.dataset.previewDoc);
     });
@@ -801,3 +873,68 @@ function initScrollToTop() {
     });
   }
 }
+
+/* ─────────────────────────────────────────────────────────────
+   8. CONTACT FORM INTERACTION & CLIENT-SIDE VALIDATION
+   ───────────────────────────────────────────────────────────── */
+function initContactForm() {
+  const form = document.getElementById('contact-form');
+  const alertBox = document.getElementById('contact-success-alert');
+  const submitBtn = document.getElementById('contact-submit-btn');
+
+  if (form) {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const origBtnHtml = submitBtn ? submitBtn.innerHTML : '';
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = `<span>Sending Dispatch...</span>`;
+      }
+
+      setTimeout(() => {
+        if (alertBox) {
+          alertBox.classList.add('show');
+          alertBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = `<span>Message Sent Successfully!</span>`;
+          setTimeout(() => {
+            submitBtn.innerHTML = origBtnHtml;
+          }, 3500);
+        }
+        form.reset();
+      }, 600);
+    });
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────
+   9. SCROLL REVEAL OBSERVER FOR DYNAMIC MICRO-INTERACTIONS
+   ───────────────────────────────────────────────────────────── */
+function initScrollReveal() {
+  if (!('IntersectionObserver' in window)) return;
+
+  const targets = document.querySelectorAll(
+    '.section-header, .milestone-timeline-item, .milestone-block, .team-card, .tech-card, .step-detail-card, .contact-form-card'
+  );
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-revealed');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    root: null,
+    rootMargin: '0px 0px -40px 0px',
+    threshold: 0.08
+  });
+
+  targets.forEach(target => {
+    target.classList.add('reveal-on-scroll');
+    observer.observe(target);
+  });
+}
+

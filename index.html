@@ -16,7 +16,7 @@
     rel="stylesheet">
 
   <!-- Vanilla CSS Style (cache-busted) -->
-  <link rel="stylesheet" href="css/style.css?v=2.5">
+  <link rel="stylesheet" href="css/style.css?v=3.0">
   <link rel="icon" type="image/png" href="images/faceo-logo.png">
 </head>
 
@@ -35,7 +35,6 @@
         <div>
           <div style="display: flex; align-items: center;">
             <span class="nav-brand-title">Faceo</span>
-            <span class="nav-brand-tag font-mono">SLIIT Research</span>
           </div>
           <span style="font-size: 0.65rem; color: var(--text-faint); letter-spacing: 0.05em; display: block;"
             class="font-mono">
@@ -47,12 +46,15 @@
       <!-- Desktop Nav Links -->
       <nav class="nav-links-pill">
         <a href="#overview" class="nav-link active">Overview</a>
+        <a href="#domain" class="nav-link">Domain</a>
         <a href="#problem" class="nav-link">Objectives</a>
         <a href="#architecture" class="nav-link">Architecture</a>
         <a href="#components" class="nav-link">Components</a>
         <a href="#tech-stack" class="nav-link">Tech Stack</a>
+        <a href="#milestones" class="nav-link">Milestones</a>
         <a href="#documents" class="nav-link">Documents</a>
         <a href="#team" class="nav-link">Team</a>
+        <a href="#contact" class="nav-link">Contact</a>
       </nav>
 
       <!-- Right Action CTAs -->
@@ -67,7 +69,7 @@
           </svg>
         </a>
 
-        <a href="docs/research-paper.pdf" target="_blank" data-preview-doc="paper" class="btn-cta-primary"
+        <a href="https://drive.google.com/file/d/13KEmB_HbDrIKQwkLQgdQZP55jm9jFsVP/view?usp=sharing" target="_blank" rel="noopener noreferrer" data-preview-doc="paper" class="btn-cta-primary"
           aria-label="Read Research Paper" title="Read Research Paper">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
             stroke-linecap="round" stroke-linejoin="round">
@@ -99,15 +101,14 @@
       style="font-size: 0.65rem; font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.15em; color: var(--text-faint); margin-bottom: 0.25rem;">
       Navigation Menu
     </div>
-    <a href="#overview" class="mobile-nav-link"><span>Overview</span> <span>→</span></a>
-    <a href="#problem" class="mobile-nav-link"><span>Objectives</span> <span>→</span></a>
-    <a href="#architecture" class="mobile-nav-link"><span>Architecture</span> <span>→</span></a>
-    <a href="#components" class="mobile-nav-link"><span>Components</span> <span>→</span></a>
-    <a href="#tech-stack" class="mobile-nav-link"><span>Tech Stack</span> <span>→</span></a>
-    <a href="#documents" class="mobile-nav-link"><span>Documents</span> <span>→</span></a>
-    <a href="#team" class="mobile-nav-link"><span>Team</span> <span>→</span></a>
+    <a href="#overview" class="mobile-nav-link"><span>Home</span> <span>→</span></a>
+    <a href="#domain" class="mobile-nav-link"><span>Domain &amp; Literature Survey</span> <span>→</span></a>
+    <a href="#milestones" class="mobile-nav-link"><span>Milestones &amp; Assessments</span> <span>→</span></a>
+    <a href="#documents" class="mobile-nav-link"><span>Documents &amp; Deliverables</span> <span>→</span></a>
+    <a href="#team" class="mobile-nav-link"><span>About Us</span> <span>→</span></a>
+    <a href="#contact" class="mobile-nav-link"><span>Contact Us</span> <span>→</span></a>
     <div style="padding-top: 1rem; display: flex; gap: 0.75rem;">
-      <a href="docs/research-paper.pdf" target="_blank" data-preview-doc="paper" class="btn-cta-primary"
+      <a href="https://drive.google.com/file/d/13KEmB_HbDrIKQwkLQgdQZP55jm9jFsVP/view?usp=sharing" target="_blank" rel="noopener noreferrer" data-preview-doc="paper" class="btn-cta-primary"
         style="flex: 1; justify-content: center; padding: 0.75rem;" aria-label="Read Research Paper">Read Paper</a>
       <a href="https://github.com/R26-IT-011/FACEO" target="_blank" rel="noopener noreferrer" class="btn-icon"
         style="padding: 0.75rem;" aria-label="GitHub Repository" title="GitHub Repository">
@@ -458,7 +459,208 @@
   </section>
 
   <!-- =========================================================================
-       3. PROBLEM STATEMENT & OBJECTIVES SECTION
+       3. DOMAIN & COMPREHENSIVE LITERATURE SURVEY SECTION
+       ========================================================================= -->
+  <section id="domain" class="section-py" style="background: radial-gradient(circle at 50% 10%, rgba(6,182,212,0.04), transparent 70%);">
+    <div class="max-w-container">
+      <div class="section-header">
+        <div class="badge badge-cyan">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+          </svg>
+          <span>Research Domain &amp; Literature Survey</span>
+        </div>
+        <h2 class="section-title">Domain Exploration &amp; Literature Survey</h2>
+        <p class="section-desc">
+          A systematic comparative review of global facial analytics, edge demographics, low-light enhancement, and
+          forensic deepfake models, establishing the concrete empirical gap on Sri Lankan and South Asian populations.
+        </p>
+      </div>
+
+      <!-- Comparative Literature Survey Table -->
+      <div class="lit-table-wrapper">
+        <table class="lit-table">
+          <thead>
+            <tr>
+              <th style="width: 20%;">Domain &amp; Prior Literature</th>
+              <th style="width: 20%;">Baseline Method &amp; Datasets</th>
+              <th style="width: 16%;">Reported Benchmark</th>
+              <th style="width: 22%;">Limitations on Sri Lankan Faces</th>
+              <th style="width: 22%;">Faceo Novel Countermeasure</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Study 1 -->
+            <tr>
+              <td>
+                <span class="lit-citation-tag">FER &amp; Affective Biometrics</span>
+                <strong style="color: #fff; font-weight: 500;">Mollahosseini et al. (2017)</strong>
+                <span style="display: block; font-size: 0.725rem; color: var(--text-faint);">AffectNet / FER2013</span>
+              </td>
+              <td>Deep Convolutional Neural Networks trained on web-mined Western facial datasets (CelebA, RAF-DB).</td>
+              <td><span class="badge badge-cyan">74.8% – 82.3% Acc</span><br><span style="font-size: 0.7rem; color: var(--text-faint);">on Caucasian test splits</span></td>
+              <td>
+                <span class="lit-limit-text">
+                  • 14–22% accuracy degradation on Fitzpatrick IV &amp; V skin tones.<br>
+                  • Subtle emotional cues misclassified as neutral/anger due to melanin tone absorption.
+                </span>
+              </td>
+              <td>
+                <span class="lit-solution-text">
+                  Integrated L-channel CLAHE equalization + custom CNN with Sri Lankan demographic data tuning (92.32% Acc).
+                </span>
+              </td>
+            </tr>
+
+            <!-- Study 2 -->
+            <tr>
+              <td>
+                <span class="lit-citation-tag">Client-Side Demographics</span>
+                <strong style="color: #fff; font-weight: 500;">Vincent M. (2020) &amp; Rothe (2018)</strong>
+                <span style="display: block; font-size: 0.725rem; color: var(--text-faint);">Face-API.js / DEX (IMDB-WIKI)</span>
+              </td>
+              <td>MobileNetV1 backbones with WebGL/WASM acceleration in JavaScript engines.</td>
+              <td><span class="badge badge-blue">89.2% Gender / ±4.8y Age</span><br><span style="font-size: 0.7rem; color: var(--text-faint);">on Western datasets</span></td>
+              <td>
+                <span class="lit-limit-text">
+                  • Systematic bias in South Asian age estimation (+6.4y skew).<br>
+                  • High frame-drop under client edge execution on entry-level hardware.
+                </span>
+              </td>
+              <td>
+                <span class="lit-solution-text">
+                  Optimized WebAssembly tensor pipeline with local demographic demographic calibration (&lt; 40ms, zero cloud reliance).
+                </span>
+              </td>
+            </tr>
+
+            <!-- Study 3 -->
+            <tr>
+              <td>
+                <span class="lit-citation-tag">Low-Light Enhancement</span>
+                <strong style="color: #fff; font-weight: 500;">Jiang et al. (2021) / Guo (2020)</strong>
+                <span style="display: block; font-size: 0.725rem; color: var(--text-faint);">EnlightenGAN / Zero-DCE</span>
+              </td>
+              <td>Deep generative neural networks &amp; curve estimation for severe illumination restoration.</td>
+              <td><span class="badge badge-amber">PSNR 21.4 dB</span><br><span style="font-size: 0.7rem; color: var(--text-faint);">on synthetic low-lux images</span></td>
+              <td>
+                <span class="lit-limit-text">
+                  • Extreme computational overhead (&gt; 120ms latency).<br>
+                  • Introduces artificial chromatic noise and edge distortion on dark skin in unconstrained surveillance.
+                </span>
+              </td>
+              <td>
+                <span class="lit-solution-text">
+                  Dual-stage LAB color-space CLAHE (Clip=2.0) with parametric Gamma correction (γ=1.4) executing in &lt; 12ms.
+                </span>
+              </td>
+            </tr>
+
+            <!-- Study 4 -->
+            <tr>
+              <td>
+                <span class="lit-citation-tag">Facial Condition Localization</span>
+                <strong style="color: #fff; font-weight: 500;">Ramadhani et al. (2022) / YOLOv8</strong>
+                <span style="display: block; font-size: 0.725rem; color: var(--text-faint);">Dermatology Object Detectors</span>
+              </td>
+              <td>General-purpose single-shot detectors (YOLO / SSD) for micro-dermatological bounding boxes.</td>
+              <td><span class="badge badge-emerald">62.4% mAP</span><br><span style="font-size: 0.7rem; color: var(--text-faint);">on high-contrast uniform clinic sets</span></td>
+              <td>
+                <span class="lit-limit-text">
+                  • Struggles on South Asian skin where inflammatory erythema has low contrast against darker pigmentation.<br>
+                  • High false positive rate on benign moles vs. acne.
+                </span>
+              </td>
+              <td>
+                <span class="lit-solution-text">
+                  Ultralytics YOLO11n fine-tuned on localized Sri Lankan faces with CIoU loss (52.00% mAP@50, 70.83% precision).
+                </span>
+              </td>
+            </tr>
+
+            <!-- Study 5 -->
+            <tr>
+              <td>
+                <span class="lit-citation-tag">Deepfake Forensics</span>
+                <strong style="color: #fff; font-weight: 500;">Rössler (2019) / Liu et al. (2021)</strong>
+                <span style="display: block; font-size: 0.725rem; color: var(--text-faint);">FaceForensics++ / Swin Transformer</span>
+              </td>
+              <td>High-capacity Vision Transformers (ViT, Swin-Base) learning self-attention over spatial patches.</td>
+              <td><span class="badge badge-rose">99.1% Acc</span><br><span style="font-size: 0.7rem; color: var(--text-faint);">on in-distribution FF++ splits</span></td>
+              <td>
+                <span class="lit-limit-text">
+                  • Severe out-of-distribution generalization collapse (-18.88% drop) when evaluated on unseen Sri Lankan deepfakes.<br>
+                  • Overfits to source benchmark video compression artifacts.
+                </span>
+              </td>
+              <td>
+                <span class="lit-solution-text">
+                  ResNet-50 convolutional inductive bias combined with Error Level Analysis (ELA), achieving 92.55% robustness on 2,000 unseen Sri Lankan deepfakes.
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Structured Research Gap Matrix -->
+      <div id="research-gap" style="margin-top: 3.5rem;">
+        <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.5rem;">
+          <div style="padding: 0.5rem; border-radius: 0.75rem; background: rgba(245,158,11,0.1); border: 1px solid rgba(245,158,11,0.25); color: var(--amber);">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+          </div>
+          <div>
+            <span style="font-size: 0.65rem; font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.1em; color: var(--amber); display: block;">
+              Foundational Research Gap
+            </span>
+            <h3 style="font-size: 1.25rem; font-weight: 500; color: #fff;">4 Critical Deficits Identified in Prior Literature</h3>
+          </div>
+        </div>
+
+        <div class="grid-4-col">
+          <div class="pillar-box">
+            <span style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--amber); display: block; margin-bottom: 0.5rem;">GAP 01</span>
+            <h4 style="font-size: 0.9rem; font-weight: 500; color: #fff; margin-bottom: 0.5rem;">Phenotypic Data Skew</h4>
+            <p style="font-size: 0.8rem; color: var(--text-dim); line-height: 1.55; font-weight: 300;">
+              Over 82% of global facial recognition training sets represent Fitzpatrick I–III skin types, resulting in severe feature degradation on Melanin IV &amp; V populations.
+            </p>
+          </div>
+
+          <div class="pillar-box">
+            <span style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--blue); display: block; margin-bottom: 0.5rem;">GAP 02</span>
+            <h4 style="font-size: 0.9rem; font-weight: 500; color: #fff; margin-bottom: 0.5rem;">Low-Lux Fragility</h4>
+            <p style="font-size: 0.8rem; color: var(--text-dim); line-height: 1.55; font-weight: 300;">
+              Standard FER models collapse when illumination drops below 15 Lux. Existing generative enhancers are too computationally slow for real-time video surveillance.
+            </p>
+          </div>
+
+          <div class="pillar-box">
+            <span style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--purple); display: block; margin-bottom: 0.5rem;">GAP 03</span>
+            <h4 style="font-size: 0.9rem; font-weight: 500; color: #fff; margin-bottom: 0.5rem;">Generalization Trap</h4>
+            <p style="font-size: 0.8rem; color: var(--text-dim); line-height: 1.55; font-weight: 300;">
+              Near-perfect 99% transformer benchmark scores mask catastrophic real-world deepfake failures due to benchmark-specific compression artifact memorization.
+            </p>
+          </div>
+
+          <div class="pillar-box">
+            <span style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--emerald); display: block; margin-bottom: 0.5rem;">GAP 04</span>
+            <h4 style="font-size: 0.9rem; font-weight: 500; color: #fff; margin-bottom: 0.5rem;">Zero-Cloud Edge Privacy</h4>
+            <p style="font-size: 0.8rem; color: var(--text-dim); line-height: 1.55; font-weight: 300;">
+              Transmitting biometric video streams to cloud APIs introduces severe privacy risks. Fast sub-40ms client-side edge inference is critical for public trust.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       4. PROBLEM STATEMENT & OBJECTIVES SECTION
        ========================================================================= -->
   <section id="problem" class="section-py">
     <div class="max-w-container">
@@ -1102,8 +1304,535 @@
   </section>
 
   <!-- =========================================================================
-       7. DOCUMENTS & DELIVERABLES SECTION
+       7. PROJECT MILESTONES & ASSESSMENTS SECTION
        ========================================================================= -->
+  <section id="milestones" class="section-py" style="background: radial-gradient(circle at 50% 20%, rgba(99,102,241,0.04), transparent 70%);">
+    <div class="max-w-container">
+      <div class="section-header">
+        <div class="badge badge-purple">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+          <span>Research Roadmap</span>
+        </div>
+        <h2 class="section-title">Project Milestones &amp; Assessment Timeline</h2>
+        <p class="section-desc">
+          Formal academic evaluation schedule, grading weightages, and key submission deadlines governed by the SLIIT Faculty of Computing curriculum.
+        </p>
+      </div>
+
+      <!-- Vertical Milestones Timeline -->
+      <div class="milestones-timeline-wrapper">
+
+        <!-- MILESTONE 1: TAF -->
+        <div class="milestone-timeline-item completed">
+          <div class="milestone-timeline-dot"></div>
+          <div class="milestone-timeline-card">
+            <div class="milestone-card-top">
+              <div class="milestone-date-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                <span>February 2026</span>
+              </div>
+              <span class="milestone-status-pill completed">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                Completed
+              </span>
+            </div>
+            <h3 class="milestone-title-text">Topic Assessment Form (TAF) Submission</h3>
+            <p class="milestone-desc-text">Formal evaluation and faculty approval of the proposed research scope, multi-task methodology, and supervisor allocation.</p>
+            <div class="milestone-card-bottom">
+              <span class="milestone-marks-info">Evaluation: <strong>Approved</strong></span>
+              <div class="milestone-progress-track">
+                <div class="milestone-progress-bar-bg">
+                  <div class="milestone-progress-bar-fill" style="width: 100%; background: #10b981;"></div>
+                </div>
+                <span class="milestone-weightage-text">Passed Inception</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MILESTONE 2: PROPOSAL SUBMISSION -->
+        <div class="milestone-timeline-item completed">
+          <div class="milestone-timeline-dot"></div>
+          <div class="milestone-timeline-card">
+            <div class="milestone-card-top">
+              <div class="milestone-date-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                <span>15th March 2026</span>
+              </div>
+              <span class="milestone-status-pill completed">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                Completed
+              </span>
+            </div>
+            <h3 class="milestone-title-text">Proposal Submission</h3>
+            <p class="milestone-desc-text">Individual technical research proposals covering Literature Survey, Research Gap, and concrete experimental designs by each team member.</p>
+            <div class="milestone-card-bottom">
+              <span class="milestone-marks-info">Marks Allocated: <strong>10</strong></span>
+              <div class="milestone-progress-track">
+                <div class="milestone-progress-bar-bg">
+                  <div class="milestone-progress-bar-fill" style="width: 10%;"></div>
+                </div>
+                <span class="milestone-weightage-text">10% Weightage</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MILESTONE 3: PROPOSAL PRESENTATION -->
+        <div class="milestone-timeline-item completed">
+          <div class="milestone-timeline-dot"></div>
+          <div class="milestone-timeline-card">
+            <div class="milestone-card-top">
+              <div class="milestone-date-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                <span>16th to 18th March 2026</span>
+              </div>
+              <span class="milestone-status-pill completed">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                Completed
+              </span>
+            </div>
+            <h3 class="milestone-title-text">Proposal Presentation</h3>
+            <p class="milestone-desc-text">Comprehensive oral defense before the SLIIT academic panel on demographic challenges, low-light face enhancement, and pipeline feasibility.</p>
+            <div class="milestone-card-bottom">
+              <span class="milestone-marks-info">Marks Allocated: <strong>6</strong></span>
+              <div class="milestone-progress-track">
+                <div class="milestone-progress-bar-bg">
+                  <div class="milestone-progress-bar-fill" style="width: 6%;"></div>
+                </div>
+                <span class="milestone-weightage-text">6% Weightage</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MILESTONE 4: CHECK LIST SUBMISSION (MID-TERM) -->
+        <div class="milestone-timeline-item completed">
+          <div class="milestone-timeline-dot"></div>
+          <div class="milestone-timeline-card">
+            <div class="milestone-card-top">
+              <div class="milestone-date-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                <span>13th May 2026</span>
+              </div>
+              <span class="milestone-status-pill completed">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                Completed
+              </span>
+            </div>
+            <h3 class="milestone-title-text">Check List submission</h3>
+            <p class="milestone-desc-text">Mid-term progress compliance review and verification of research artifact milestones.</p>
+            <div class="milestone-card-bottom">
+              <span class="milestone-marks-info">Verification: <strong>Approved</strong></span>
+              <div class="milestone-progress-track">
+                <span class="milestone-weightage-text">Quality Assurance Audit</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MILESTONE 5: PP1 -->
+        <div class="milestone-timeline-item completed">
+          <div class="milestone-timeline-dot"></div>
+          <div class="milestone-timeline-card">
+            <div class="milestone-card-top">
+              <div class="milestone-date-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                <span>11th – 13th May 2026</span>
+              </div>
+              <span class="milestone-status-pill completed">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                Completed
+              </span>
+            </div>
+            <h3 class="milestone-title-text">Progress Presentation 1</h3>
+            <p class="milestone-desc-text">Evaluation of prototype implementation: 50% feature completion, data preprocessing pipelines, and preliminary benchmark results.</p>
+            <div class="milestone-card-bottom">
+              <span class="milestone-marks-info">Marks Allocated: <strong>10</strong></span>
+              <div class="milestone-progress-track">
+                <div class="milestone-progress-bar-bg">
+                  <div class="milestone-progress-bar-fill" style="width: 10%;"></div>
+                </div>
+                <span class="milestone-weightage-text">10% Weightage</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MILESTONE 6: PP2 -->
+        <div class="milestone-timeline-item completed">
+          <div class="milestone-timeline-dot"></div>
+          <div class="milestone-timeline-card">
+            <div class="milestone-card-top">
+              <div class="milestone-date-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                <span>31st August – 02nd September 2026</span>
+              </div>
+              <span class="milestone-status-pill completed">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                Completed
+              </span>
+            </div>
+            <h3 class="milestone-title-text">Progress Presentation 2</h3>
+            <p class="milestone-desc-text">Assessment of 90% implementation readiness: multi-task model convergence, cross-dataset generalization audits, and user experience prototype.</p>
+            <div class="milestone-card-bottom">
+              <span class="milestone-marks-info">Marks Allocated: <strong>17</strong></span>
+              <div class="milestone-progress-track">
+                <div class="milestone-progress-bar-bg">
+                  <div class="milestone-progress-bar-fill" style="width: 17%;"></div>
+                </div>
+                <span class="milestone-weightage-text">17% Weightage</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MILESTONE 7: DRAFT THESIS -->
+        <div class="milestone-timeline-item completed">
+          <div class="milestone-timeline-dot"></div>
+          <div class="milestone-timeline-card">
+            <div class="milestone-card-top">
+              <div class="milestone-date-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                <span>11th October 2026</span>
+              </div>
+              <span class="milestone-status-pill completed">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                Completed
+              </span>
+            </div>
+            <h3 class="milestone-title-text">Draft Thesis submission</h3>
+            <p class="milestone-desc-text">Submission of full draft thesis manuscript for supervisor review, chapter verification, and pre-defense audit.</p>
+            <div class="milestone-card-bottom">
+              <span class="milestone-marks-info">Review: <strong>Submitted (4 Dissertations)</strong></span>
+              <div class="milestone-progress-track">
+                <div class="milestone-progress-bar-bg">
+                  <div class="milestone-progress-bar-fill" style="width: 100%; background: #10b981;"></div>
+                </div>
+                <span class="milestone-weightage-text">Pre-Defense Audit</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MILESTONE 8: WEBSITE SUBMISSION -->
+        <div class="milestone-timeline-item completed">
+          <div class="milestone-timeline-dot"></div>
+          <div class="milestone-timeline-card">
+            <div class="milestone-card-top">
+              <div class="milestone-date-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                <span>11th October 2026</span>
+              </div>
+              <span class="milestone-status-pill completed">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                Completed
+              </span>
+            </div>
+            <h3 class="milestone-title-text">Website Submission</h3>
+            <p class="milestone-desc-text">Submission of live research project web repository and interactive artifacts.</p>
+            <div style="margin-top: 0.5rem; margin-bottom: 0.25rem;">
+              <a href="https://web-mu-blush-90.vercel.app/" target="_blank" rel="noopener noreferrer" class="badge badge-emerald" style="font-size: 0.65rem; text-transform: none; display: inline-flex; align-items: center; gap: 0.35rem; text-decoration: none;" title="Visit Live Research Website">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                <span>Live Website: web-mu-blush-90.vercel.app ↗</span>
+              </a>
+            </div>
+            <div class="milestone-card-bottom">
+              <span class="milestone-marks-info">Marks Allocated: <strong>4 (Submitted)</strong></span>
+              <div class="milestone-progress-track">
+                <div class="milestone-progress-bar-bg">
+                  <div class="milestone-progress-bar-fill" style="width: 100%; background: #10b981;"></div>
+                </div>
+                <span class="milestone-weightage-text">4% Weightage</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MILESTONE 9: FINAL CHECKLIST -->
+        <div class="milestone-timeline-item">
+          <div class="milestone-timeline-dot"></div>
+          <div class="milestone-timeline-card">
+            <div class="milestone-card-top">
+              <div class="milestone-date-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                <span>14th October 2026</span>
+              </div>
+              <span class="milestone-status-pill upcoming">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                Upcoming
+              </span>
+            </div>
+            <h3 class="milestone-title-text">Final Check List submission</h3>
+            <p class="milestone-desc-text">Final checklist review of research deliverables and readiness verification.</p>
+            <div class="milestone-card-bottom">
+              <span class="milestone-marks-info">Marks Allocated: <strong>1</strong></span>
+              <div class="milestone-progress-track">
+                <div class="milestone-progress-bar-bg">
+                  <div class="milestone-progress-bar-fill" style="width: 1%;"></div>
+                </div>
+                <span class="milestone-weightage-text">1% Weightage</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MILESTONE 10: FINAL PRESENTATION AND VIVA -->
+        <div class="milestone-timeline-item">
+          <div class="milestone-timeline-dot"></div>
+          <div class="milestone-timeline-card">
+            <div class="milestone-card-top">
+              <div class="milestone-date-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                <span>19th – 21st October 2026</span>
+              </div>
+              <span class="milestone-status-pill upcoming">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                Upcoming
+              </span>
+            </div>
+            <h3 class="milestone-title-text">Final Presentation and Viva</h3>
+            <p class="milestone-desc-text">Final academic defense, live prototype demonstration, and viva voce examination.</p>
+            <div class="milestone-card-bottom">
+              <span class="milestone-marks-info">Marks Allocated: <strong>20</strong></span>
+              <div class="milestone-progress-track">
+                <div class="milestone-progress-bar-bg">
+                  <div class="milestone-progress-bar-fill" style="width: 20%;"></div>
+                </div>
+                <span class="milestone-weightage-text">20% Weightage</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MILESTONE 11: WEBSITE EVALUATION & LOGBOOK -->
+        <div class="milestone-timeline-item">
+          <div class="milestone-timeline-dot"></div>
+          <div class="milestone-timeline-card">
+            <div class="milestone-card-top">
+              <div class="milestone-date-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                <span>19th – 21st October 2026</span>
+              </div>
+              <span class="milestone-status-pill upcoming">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                Upcoming
+              </span>
+            </div>
+            <h3 class="milestone-title-text">Website evaluation &amp; Logbook submission</h3>
+            <p class="milestone-desc-text">Formal evaluation of the project website repository and verified team research logbooks.</p>
+            <div class="milestone-card-bottom">
+              <span class="milestone-marks-info">Marks Allocated: <strong>4</strong></span>
+              <div class="milestone-progress-track">
+                <div class="milestone-progress-bar-bg">
+                  <div class="milestone-progress-bar-fill" style="width: 4%;"></div>
+                </div>
+                <span class="milestone-weightage-text">4% Weightage</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MILESTONE 12: RESEARCH PAPER SUBMISSION -->
+        <div class="milestone-timeline-item">
+          <div class="milestone-timeline-dot"></div>
+          <div class="milestone-timeline-card">
+            <div class="milestone-card-top">
+              <div class="milestone-date-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                <span>23rd October 2026</span>
+              </div>
+              <span class="milestone-status-pill upcoming">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                Upcoming
+              </span>
+            </div>
+            <h3 class="milestone-title-text">Research Paper submission</h3>
+            <p class="milestone-desc-text">Submission of full camera-ready research paper formatted for conference/journal review.</p>
+            <div class="milestone-card-bottom">
+              <span class="milestone-marks-info">Marks Allocated: <strong>10</strong></span>
+              <div class="milestone-progress-track">
+                <div class="milestone-progress-bar-bg">
+                  <div class="milestone-progress-bar-fill" style="width: 10%;"></div>
+                </div>
+                <span class="milestone-weightage-text">10% Weightage</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MILESTONE 13: FINAL THESIS SUBMISSION -->
+        <div class="milestone-timeline-item">
+          <div class="milestone-timeline-dot"></div>
+          <div class="milestone-timeline-card">
+            <div class="milestone-card-top">
+              <div class="milestone-date-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                <span>28th October 2026</span>
+              </div>
+              <span class="milestone-status-pill upcoming">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                Upcoming
+              </span>
+            </div>
+            <h3 class="milestone-title-text">Final Thesis Submission</h3>
+            <p class="milestone-desc-text">Final bound and electronic submission of the approved complete research thesis.</p>
+            <div class="milestone-card-bottom">
+              <span class="milestone-marks-info">Deliverable: <strong>Comprehensive Final Dissertation</strong></span>
+              <div class="milestone-progress-track">
+                <span class="milestone-weightage-text">Capstone Thesis</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MILESTONE 14: PUBLICATION EVIDENCE -->
+        <div class="milestone-timeline-item">
+          <div class="milestone-timeline-dot"></div>
+          <div class="milestone-timeline-card">
+            <div class="milestone-card-top">
+              <div class="milestone-date-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                <span>1st December 2026</span>
+              </div>
+              <span class="milestone-status-pill upcoming">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                Upcoming
+              </span>
+            </div>
+            <h3 class="milestone-title-text">Research Paper publication evidence submission</h3>
+            <p class="milestone-desc-text">Submission of formal acceptance or publication evidence in academic proceedings.</p>
+            <div class="milestone-card-bottom">
+              <span class="milestone-marks-info">Verification: <strong>IEEE Conference Proceedings / Scopus</strong></span>
+              <div class="milestone-progress-track">
+                <span class="milestone-weightage-text">Publication Proof</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+  7. DOCUMENTS & DELIVERABLES SECTION
+  ========================================================================= -->
   <section id="documents" class="section-py">
     <div class="max-w-container">
       <div class="section-header">
@@ -1150,7 +1879,7 @@
                 </svg>
                 <span>Preview</span>
               </button>
-              <a href="docs/taf.pdf" download class="btn-doc-download">
+              <a href="https://drive.google.com/file/d/1IuGWnAsykhD6w-9Fu44AJ5OXkoPjKet6/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-doc-download">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                   <polyline points="7 10 12 15 17 10"></polyline>
@@ -1197,7 +1926,7 @@
                 </svg>
                 <span>Preview</span>
               </button>
-              <a href="docs/proposal-presentation.pdf" download class="btn-doc-download"
+              <a href="https://drive.google.com/file/d/1mGWLk7-gGMFgGTmZJkN52PUpsZfi_JPn/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-doc-download"
                 style="background: rgba(168,85,247,0.15); border-color: rgba(168,85,247,0.3); color: #c084fc;">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
@@ -1251,7 +1980,7 @@
                   </svg>
                   <span>Preview</span>
                 </button>
-                <a href="docs/IT22541970_Damidu.pdf" download class="btn-doc-download"
+                <a href="https://drive.google.com/file/d/1BLbvTrISPrssQXHxydc_1HlEtarc7JCk/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-doc-download"
                   style="background: rgba(16,185,129,0.15); border-color: rgba(16,185,129,0.3); color: #6ee7b7;">
                   <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
@@ -1295,7 +2024,7 @@
                   </svg>
                   <span>Preview</span>
                 </button>
-                <a href="docs/IT22254252_Gagana.pdf" download class="btn-doc-download"
+                <a href="https://drive.google.com/file/d/1IgmpnJj8aHnALoRRuCxK-WSsFSzE7UfR/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-doc-download"
                   style="background: rgba(16,185,129,0.15); border-color: rgba(16,185,129,0.3); color: #6ee7b7;">
                   <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
@@ -1339,7 +2068,7 @@
                   </svg>
                   <span>Preview</span>
                 </button>
-                <a href="docs/IT22278876_Sanjana.pdf" download class="btn-doc-download"
+                <a href="https://drive.google.com/file/d/1OJi84voT3KLS714hmv0ct7nGcxfDNr_7/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-doc-download"
                   style="background: rgba(16,185,129,0.15); border-color: rgba(16,185,129,0.3); color: #6ee7b7;">
                   <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
@@ -1383,7 +2112,7 @@
                   </svg>
                   <span>Preview</span>
                 </button>
-                <a href="docs/IT22276728_Ruchira.pdf" download class="btn-doc-download"
+                <a href="https://drive.google.com/file/d/1xR4RMzxbxJVRvqOkCOcK_3TZgkhzGDHS/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-doc-download"
                   style="background: rgba(16,185,129,0.15); border-color: rgba(16,185,129,0.3); color: #6ee7b7;">
                   <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
@@ -1432,7 +2161,7 @@
                 </svg>
                 <span>Preview</span>
               </button>
-              <a href="docs/pp1-presentation.pdf" download class="btn-doc-download"
+              <a href="https://drive.google.com/file/d/1J3mx6PPruc_WPiP2LcsCN-PBfmfC4NeX/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-doc-download"
                 style="background: rgba(59,130,246,0.15); border-color: rgba(59,130,246,0.3); color: #93c5fd;">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
@@ -1480,7 +2209,7 @@
                 </svg>
                 <span>Preview</span>
               </button>
-              <a href="docs/pp2-presentation.pdf" download class="btn-doc-download"
+              <a href="https://drive.google.com/file/d/1ts5CHj_t86ZrmbO1hQb1Z5OnLG3W8M7Z/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-doc-download"
                 style="background: rgba(245,158,11,0.15); border-color: rgba(245,158,11,0.3); color: #fcd34d;">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
@@ -1527,7 +2256,7 @@
                 </svg>
                 <span>Preview</span>
               </button>
-              <a href="docs/research-paper.pdf" download class="btn-doc-download"
+              <a href="https://drive.google.com/file/d/13KEmB_HbDrIKQwkLQgdQZP55jm9jFsVP/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-doc-download"
                 style="background: rgba(244,63,94,0.15); border-color: rgba(244,63,94,0.3); color: #fda4af;">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
@@ -1548,13 +2277,274 @@
           </div>
         </div>
 
+        <!-- MILESTONE 7: DRAFT THESIS DOCUMENTS (4 MEMBERS) -->
+        <div class="milestone-block">
+          <div class="milestone-header">
+            <span class="badge badge-cyan">Milestone 07 • Pre-Defense Manuscripts</span>
+            <h3 class="milestone-title">Draft Thesis Submissions (4 Dissertations)</h3>
+            <p class="milestone-desc">Individual complete research thesis draft manuscripts submitted for supervisor audit and pre-defense verification.</p>
+          </div>
+
+          <div class="docs-grid">
+            <!-- Damidu -->
+            <div class="doc-card doc-card-emerald" style="width: 100%;">
+              <div>
+                <span
+                  style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--cyan); font-weight: 600; display: block;">IT22541970</span>
+                <span
+                  style="font-size: 0.95rem; font-weight: 500; color: #fff; display: block; margin-top: 0.15rem;">Damidu
+                  Dissanayake</span>
+                <span style="font-size: 0.75rem; color: var(--text-dim); display: block; margin-top: 0.15rem;">Emotion
+                  Recognition &amp; Low Light</span>
+              </div>
+              <img src="images/pdf-icon.svg" alt="PDF Document" class="doc-pdf-img">
+              <div
+                style="font-size: 0.7rem; font-family: var(--font-mono); color: var(--text-faint); margin-bottom: 0.75rem;">
+                <span>PDF • Draft Thesis Manuscript</span>
+              </div>
+              <div class="doc-actions-row">
+                <button class="btn-doc-preview" data-preview-doc="thesisDamidu">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="2">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                  <span>Preview</span>
+                </button>
+                <a href="https://drive.google.com/file/d/1sNXHnEAAsSXxhoyYHsAXa_ALlRlVQIbF/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-doc-download"
+                  style="background: rgba(6,182,212,0.15); border-color: rgba(6,182,212,0.3); color: #67e8f9;">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                  <span>Download</span>
+                </a>
+                <a href="https://drive.google.com/file/d/1sNXHnEAAsSXxhoyYHsAXa_ALlRlVQIbF/view?usp=sharing"
+                  target="_blank" rel="noopener noreferrer" class="btn-doc-drive" title="Google Drive">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Gagana -->
+            <div class="doc-card doc-card-blue" style="width: 100%;">
+              <div>
+                <span
+                  style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--blue); font-weight: 600; display: block;">IT22254252</span>
+                <span
+                  style="font-size: 0.95rem; font-weight: 500; color: #fff; display: block; margin-top: 0.15rem;">Gagana
+                  Perera</span>
+                <span style="font-size: 0.75rem; color: var(--text-dim); display: block; margin-top: 0.15rem;">Age &amp;
+                  Gender Estimation</span>
+              </div>
+              <img src="images/pdf-icon.svg" alt="PDF Document" class="doc-pdf-img">
+              <div
+                style="font-size: 0.7rem; font-family: var(--font-mono); color: var(--text-faint); margin-bottom: 0.75rem;">
+                <span>PDF • Draft Thesis Manuscript</span>
+              </div>
+              <div class="doc-actions-row">
+                <button class="btn-doc-preview" data-preview-doc="thesisGagana">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                  <span>Preview</span>
+                </button>
+                <a href="https://drive.google.com/file/d/1Wn-Rh4djYV6XM0NxJ198kjKu1862SHPM/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-doc-download"
+                  style="background: rgba(59,130,246,0.15); border-color: rgba(59,130,246,0.3); color: #93c5fd;">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                  <span>Download</span>
+                </a>
+                <a href="https://drive.google.com/file/d/1Wn-Rh4djYV6XM0NxJ198kjKu1862SHPM/view?usp=sharing"
+                  target="_blank" rel="noopener noreferrer" class="btn-doc-drive" title="Google Drive">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Sanjana -->
+            <div class="doc-card doc-card-amber" style="width: 100%;">
+              <div>
+                <span
+                  style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--amber); font-weight: 600; display: block;">IT22278876</span>
+                <span
+                  style="font-size: 0.95rem; font-weight: 500; color: #fff; display: block; margin-top: 0.15rem;">Sanjana
+                  Deshan</span>
+                <span style="font-size: 0.75rem; color: var(--text-dim); display: block; margin-top: 0.15rem;">Localized
+                  Condition Detection</span>
+              </div>
+              <img src="images/pdf-icon.svg" alt="PDF Document" class="doc-pdf-img">
+              <div
+                style="font-size: 0.7rem; font-family: var(--font-mono); color: var(--text-faint); margin-bottom: 0.75rem;">
+                <span>PDF • Draft Thesis Manuscript</span>
+              </div>
+              <div class="doc-actions-row">
+                <button class="btn-doc-preview" data-preview-doc="thesisSanjana">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                  <span>Preview</span>
+                </button>
+                <a href="https://drive.google.com/file/d/1ygPcwYxZ0eZaDO7qhDypGFYBXl64kS3G/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-doc-download"
+                  style="background: rgba(245,158,11,0.15); border-color: rgba(245,158,11,0.3); color: #fcd34d;">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                  <span>Download</span>
+                </a>
+                <a href="https://drive.google.com/file/d/1ygPcwYxZ0eZaDO7qhDypGFYBXl64kS3G/view?usp=sharing"
+                  target="_blank" rel="noopener noreferrer" class="btn-doc-drive" title="Google Drive">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Ruchira -->
+            <div class="doc-card doc-card-purple" style="width: 100%;">
+              <div>
+                <span
+                  style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--purple); font-weight: 600; display: block;">IT22276728</span>
+                <span
+                  style="font-size: 0.95rem; font-weight: 500; color: #fff; display: block; margin-top: 0.15rem;">Ruchira
+                  Gunawardhana</span>
+                <span style="font-size: 0.75rem; color: var(--text-dim); display: block; margin-top: 0.15rem;">Deepfake
+                  Detection &amp; Generalization</span>
+              </div>
+              <img src="images/pdf-icon.svg" alt="PDF Document" class="doc-pdf-img">
+              <div
+                style="font-size: 0.7rem; font-family: var(--font-mono); color: var(--text-faint); margin-bottom: 0.75rem;">
+                <span>PDF • Draft Thesis Manuscript</span>
+              </div>
+              <div class="doc-actions-row">
+                <button class="btn-doc-preview" data-preview-doc="thesisRuchira">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                  <span>Preview</span>
+                </button>
+                <a href="https://drive.google.com/file/d/1QQASb528RGCp3ASByTyiJq8sqTSXPgmT/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-doc-download"
+                  style="background: rgba(168,85,247,0.15); border-color: rgba(168,85,247,0.3); color: #c084fc;">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                  <span>Download</span>
+                </a>
+                <a href="https://drive.google.com/file/d/1QQASb528RGCp3ASByTyiJq8sqTSXPgmT/view?usp=sharing"
+                  target="_blank" rel="noopener noreferrer" class="btn-doc-drive" title="Google Drive">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MILESTONE 8: LIVE PROJECT WEBSITE SUBMISSION -->
+        <div class="milestone-block">
+          <div class="milestone-header">
+            <span class="badge badge-emerald">Milestone 08 • Production Deployment</span>
+            <h3 class="milestone-title">Research Project Live Website</h3>
+            <p class="milestone-desc">Official deployed web repository showcasing all project deliverables, empirical architecture benchmarks, interactive artifacts, and academic advisory.</p>
+          </div>
+
+          <div class="doc-card doc-card-emerald" style="width: 100%;">
+            <!-- Header bar -->
+            <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1.25rem;">
+              <div>
+                <span style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--emerald); font-weight: 600; display: block;">VERCEL PRODUCTION HOST</span>
+                <h4 style="font-size: 1.15rem; font-weight: 500; color: #fff; margin-top: 0.2rem;">Faceo | FacialAnalysis-LK Live Platform</h4>
+                <a href="https://web-mu-blush-90.vercel.app/" target="_blank" rel="noopener noreferrer" style="font-size: 0.825rem; font-family: var(--font-mono); color: #6ee7b7; display: inline-flex; align-items: center; gap: 0.35rem; margin-top: 0.25rem; text-decoration: none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">
+                  <span>https://web-mu-blush-90.vercel.app/</span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+              <span class="badge badge-emerald" style="font-size: 0.75rem; padding: 0.35rem 0.75rem; display: flex; align-items: center; gap: 0.4rem;">
+                <span style="width: 8px; height: 8px; border-radius: 50%; background: #10b981; box-shadow: 0 0 10px #10b981;"></span>
+                <span>Active • Deployed</span>
+              </span>
+            </div>
+
+            <!-- Browser Mockup Window with webImage.png -->
+            <a href="https://web-mu-blush-90.vercel.app/" target="_blank" rel="noopener noreferrer" style="display: block; text-decoration: none; border-radius: 0.85rem; overflow: hidden; border: 1px solid rgba(255,255,255,0.12); background: rgba(0,0,0,0.8); margin-bottom: 1.25rem; transition: transform 0.3s ease, border-color 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)'; this.style.borderColor='rgba(16,185,129,0.5)';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='rgba(255,255,255,0.12)';">
+              <!-- Window top bar -->
+              <div style="display: flex; align-items: center; justify-content: space-between; padding: 0.6rem 1rem; background: rgba(255,255,255,0.04); border-bottom: 1px solid rgba(255,255,255,0.08);">
+                <div style="display: flex; gap: 0.4rem; align-items: center;">
+                  <span style="width: 10px; height: 10px; border-radius: 50%; background: #ef4444; opacity: 0.85;"></span>
+                  <span style="width: 10px; height: 10px; border-radius: 50%; background: #f59e0b; opacity: 0.85;"></span>
+                  <span style="width: 10px; height: 10px; border-radius: 50%; background: #10b981; opacity: 0.85;"></span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.35rem; background: rgba(0,0,0,0.6); padding: 0.2rem 0.85rem; border-radius: 0.5rem; font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-dim); max-width: 70%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                  <span>https://web-mu-blush-90.vercel.app/</span>
+                </div>
+                <span style="font-size: 0.65rem; color: var(--emerald); font-family: var(--font-mono);">SSL Secured</span>
+              </div>
+              <!-- Screenshot image -->
+              <div style="width: 100%; max-height: 400px; overflow: hidden; position: relative; background: #000;">
+                <img src="images/webImage.png" alt="Faceo Live Website Preview" style="width: 100%; height: auto; display: block; object-fit: cover; object-position: top center;">
+              </div>
+            </a>
+
+            <!-- Info ribbon -->
+            <div style="padding: 0.85rem 1rem; border-radius: 0.75rem; background: rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.06); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1rem;">
+              <div style="font-size: 0.75rem; color: var(--text-dim); line-height: 1.5;">
+                <strong style="color: #fff; font-weight: 400;">Deliverable Scope:</strong> Full interactive portfolio with responsive documentation viewer, multi-task dataset audits, and academic supervision details.
+              </div>
+              <div style="display: flex; gap: 0.4rem; flex-wrap: wrap;">
+                <span class="badge" style="font-size: 0.65rem; background: rgba(255,255,255,0.05);">Vercel Edge</span>
+                <span class="badge" style="font-size: 0.65rem; background: rgba(255,255,255,0.05);">HTTPS SSL</span>
+                <span class="badge" style="font-size: 0.65rem; background: rgba(255,255,255,0.05);">Responsive UI</span>
+              </div>
+            </div>
+
+            <!-- Actions -->
+            <div class="doc-actions-row">
+              <a href="https://web-mu-blush-90.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-doc-download"
+                style="background: rgba(16,185,129,0.15); border-color: rgba(16,185,129,0.4); color: #6ee7b7; text-decoration: none; font-size: 0.8rem; padding: 0.6rem 1.25rem;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+                <span>Visit Live Website ↗</span>
+              </a>
+              <a href="https://github.com/R26-IT-011/FACEO" target="_blank" rel="noopener noreferrer" class="btn-doc-drive" title="GitHub Codebase" style="text-decoration: none; padding: 0.6rem 1rem;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                <span style="font-size: 0.75rem; margin-left: 0.35rem;">GitHub ↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- =========================================================================
-       8. TEAM & SUPERVISION SECTION
-       ========================================================================= -->
   <section id="team" class="section-py">
     <div class="max-w-container">
       <div class="section-header">
@@ -1593,29 +2583,35 @@
               <div class="team-photo-frame">
                 <img src="images/damidu.jpeg" alt="Damidu Dissanayake" class="team-photo">
                 <span class="badge badge-cyan"
-                  style="position: absolute; top: 0.6rem; left: 0.6rem; font-size: 0.65rem; padding: 0.2rem 0.5rem; background: rgba(0,0,0,0.7); backdrop-filter: blur(8px);">Component
-                  01</span>
+                  style="position: absolute; top: 0.6rem; left: 0.6rem; font-size: 0.65rem; padding: 0.2rem 0.5rem; background: rgba(0,0,0,0.7); backdrop-filter: blur(8px);">Component 01</span>
                 <span class="badge"
                   style="position: absolute; top: 0.6rem; right: 0.6rem; font-size: 0.65rem; padding: 0.2rem 0.5rem; background: rgba(0,0,0,0.7); backdrop-filter: blur(8px);">IT22541970</span>
               </div>
 
-              <h3 style="font-size: 1.05rem; font-weight: 500; color: #fff;">Damidu Dissanayake</h3>
-              <div
-                style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--cyan); font-weight: 500; margin-top: 0.2rem; margin-bottom: 0.6rem;">
+              <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.25rem;">
+                <h3 style="font-size: 1.05rem; font-weight: 500; color: #fff;">Damidu Dissanayake</h3>
+                <span class="badge badge-cyan" style="font-size: 0.6rem; padding: 0.15rem 0.45rem;">Group Leader</span>
+              </div>
+              <div style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--cyan); font-weight: 500; margin-top: 0.2rem; margin-bottom: 0.35rem;">
                 Emotion Recognition &amp; Low-Light
               </div>
+              <a href="mailto:it22541970@my.sliit.lk" style="font-size: 0.7rem; font-family: var(--font-mono); color: var(--text-dim); display: inline-flex; align-items: center; gap: 0.35rem; margin-bottom: 0.6rem; text-decoration: none;" onmouseover="this.style.color='#67e8f9'" onmouseout="this.style.color='var(--text-dim)'">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <span>it22541970@my.sliit.lk</span>
+              </a>
 
               <!-- Hover revealed panel -->
               <div class="team-hover-panel">
-                <p
-                  style="font-size: 0.775rem; color: var(--text-muted); line-height: 1.55; font-weight: 300; margin-bottom: 0.75rem; padding-top: 0.5rem; border-top: 1px solid rgba(255,255,255,0.05);">
-                  SSD MobileNet V3, adaptive L-channel CLAHE equalization, parametric Gamma correction, and custom CNN
-                  for robust low-light FER.
-                </p>
+                <div style="padding-top: 0.5rem; border-top: 1px solid rgba(255,255,255,0.05); margin-bottom: 0.5rem;">
+                  <span style="font-size: 0.65rem; font-family: var(--font-mono); color: var(--cyan); text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 0.25rem;">Academic Contribution &amp; Honors</span>
+                  <span class="badge badge-emerald" style="font-size: 0.65rem; margin-bottom: 0.4rem;">IEEE ICAC 2026 Co-Author</span>
+                  <p style="font-size: 0.775rem; color: var(--text-muted); line-height: 1.55; font-weight: 300;">
+                    SSD MobileNet V3, adaptive L-channel CLAHE equalization, parametric Gamma correction, and custom CNN achieving 92.32% accuracy for robust low-light FER on Sri Lankan faces.
+                  </p>
+                </div>
                 <div style="display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 0.75rem;">
-                  <span class="badge" style="font-size: 0.65rem; background: rgba(255,255,255,0.05);">SSD MobileNet
-                    V3</span>
-                  <span class="badge" style="font-size: 0.65rem; background: rgba(255,255,255,0.05);">CLAHE</span>
+                  <span class="badge" style="font-size: 0.65rem; background: rgba(255,255,255,0.05);">SSD MobileNet V3</span>
+                  <span class="badge" style="font-size: 0.65rem; background: rgba(255,255,255,0.05);">CLAHE (γ=1.4)</span>
                   <span class="badge" style="font-size: 0.65rem; background: rgba(255,255,255,0.05);">Custom CNN</span>
                   <span class="badge" style="font-size: 0.65rem; background: rgba(255,255,255,0.05);">PyTorch</span>
                 </div>
@@ -1623,32 +2619,23 @@
             </div>
 
             <!-- Footer -->
-            <div
-              style="padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: space-between; margin-top: 0.5rem;">
-              <a href="docs/IT22541970_Damidu.pdf" target="_blank" rel="noopener noreferrer" class="badge"
-                style="font-size: 0.65rem; text-transform: none; display: flex; align-items: center; gap: 0.35rem;">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="2">
-                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                  <polyline points="14 2 14 8 20 8"></polyline>
-                </svg>
-                <span>Report PDF ↗</span>
-              </a>
+            <div style="padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: space-between; margin-top: 0.5rem;">
+              <div style="display: flex; gap: 0.3rem; align-items: center; flex-wrap: wrap;">
+                <a href="https://drive.google.com/file/d/1sNXHnEAAsSXxhoyYHsAXa_ALlRlVQIbF/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="badge badge-cyan" style="font-size: 0.62rem; text-transform: none; display: flex; align-items: center; gap: 0.25rem;" title="Draft Thesis">
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                  <span>Thesis ↗</span>
+                </a>
+                <a href="https://drive.google.com/file/d/1BLbvTrISPrssQXHxydc_1HlEtarc7JCk/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="badge" style="font-size: 0.62rem; text-transform: none; display: flex; align-items: center; gap: 0.25rem;" title="Proposal Document">
+                  <span>Proposal ↗</span>
+                </a>
+              </div>
               <div style="display: flex; gap: 0.35rem;">
-                <a href="https://github.com/Damidu00" target="_blank" rel="noopener noreferrer" class="btn-icon"
-                  style="padding: 0.4rem;" aria-label="Damidu GitHub" title="GitHub: Damidu00"><svg width="12"
-                    height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path
-                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                    </path>
-                  </svg></a>
-                <a href="https://www.linkedin.com/in/damidu-dissanayake" target="_blank" rel="noopener noreferrer"
-                  class="btn-icon" style="padding: 0.4rem;" aria-label="Damidu LinkedIn"
-                  title="LinkedIn: damidu-dissanayake"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2">
-                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                    <rect x="2" y="9" width="4" height="12"></rect>
-                    <circle cx="4" cy="4" r="2"></circle>
-                  </svg></a>
+                <a href="https://github.com/Damidu00" target="_blank" rel="noopener noreferrer" class="btn-icon" style="padding: 0.4rem;" aria-label="Damidu GitHub" title="GitHub: Damidu00">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/damidu-dissanayake" target="_blank" rel="noopener noreferrer" class="btn-icon" style="padding: 0.4rem;" aria-label="Damidu LinkedIn" title="LinkedIn: damidu-dissanayake">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
               </div>
             </div>
           </div>
@@ -1659,59 +2646,57 @@
               <div class="team-photo-frame">
                 <img src="images/gagana.jpeg" alt="Gagana Perera" class="team-photo">
                 <span class="badge badge-blue"
-                  style="position: absolute; top: 0.6rem; left: 0.6rem; font-size: 0.65rem; padding: 0.2rem 0.5rem; background: rgba(0,0,0,0.7); backdrop-filter: blur(8px);">Component
-                  02</span>
+                  style="position: absolute; top: 0.6rem; left: 0.6rem; font-size: 0.65rem; padding: 0.2rem 0.5rem; background: rgba(0,0,0,0.7); backdrop-filter: blur(8px);">Component 02</span>
                 <span class="badge"
                   style="position: absolute; top: 0.6rem; right: 0.6rem; font-size: 0.65rem; padding: 0.2rem 0.5rem; background: rgba(0,0,0,0.7); backdrop-filter: blur(8px);">IT22254252</span>
               </div>
 
-              <h3 style="font-size: 1.05rem; font-weight: 500; color: #fff;">Gagana Perera</h3>
-              <div
-                style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--blue); font-weight: 500; margin-top: 0.2rem; margin-bottom: 0.6rem;">
+              <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.25rem;">
+                <h3 style="font-size: 1.05rem; font-weight: 500; color: #fff;">Gagana Perera</h3>
+                <span class="badge badge-blue" style="font-size: 0.6rem; padding: 0.15rem 0.45rem;">Edge ML Lead</span>
+              </div>
+              <div style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--blue); font-weight: 500; margin-top: 0.2rem; margin-bottom: 0.35rem;">
                 Browser Age &amp; Gender Estimation
               </div>
+              <a href="mailto:it22254252@my.sliit.lk" style="font-size: 0.7rem; font-family: var(--font-mono); color: var(--text-dim); display: inline-flex; align-items: center; gap: 0.35rem; margin-bottom: 0.6rem; text-decoration: none;" onmouseover="this.style.color='#60a5fa'" onmouseout="this.style.color='var(--text-dim)'">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <span>it22254252@my.sliit.lk</span>
+              </a>
 
               <div class="team-hover-panel">
-                <p
-                  style="font-size: 0.775rem; color: var(--text-muted); line-height: 1.55; font-weight: 300; margin-bottom: 0.75rem; padding-top: 0.5rem; border-top: 1px solid rgba(255,255,255,0.05);">
-                  Client-side edge pipeline using Face-API.js and TensorFlow.js, enabling sub-40ms zero-cloud
-                  demographic estimation on webcam streams.
-                </p>
+                <div style="padding-top: 0.5rem; border-top: 1px solid rgba(255,255,255,0.05); margin-bottom: 0.5rem;">
+                  <span style="font-size: 0.65rem; font-family: var(--font-mono); color: var(--blue); text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 0.25rem;">Academic Contribution &amp; Honors</span>
+                  <span class="badge badge-cyan" style="font-size: 0.65rem; margin-bottom: 0.4rem;">Sub-40ms Edge Inference</span>
+                  <p style="font-size: 0.775rem; color: var(--text-muted); line-height: 1.55; font-weight: 300;">
+                    Client-side edge pipeline using Face-API.js and TensorFlow.js, enabling sub-40ms zero-cloud demographic estimation on webcam streams with local demographic bias calibration.
+                  </p>
+                </div>
                 <div style="display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 0.75rem;">
                   <span class="badge" style="font-size: 0.65rem; background: rgba(255,255,255,0.05);">Face-API.js</span>
-                  <span class="badge"
-                    style="font-size: 0.65rem; background: rgba(255,255,255,0.05);">TensorFlow.js</span>
+                  <span class="badge" style="font-size: 0.65rem; background: rgba(255,255,255,0.05);">TensorFlow.js</span>
                   <span class="badge" style="font-size: 0.65rem; background: rgba(255,255,255,0.05);">WebAssembly</span>
-                  <span class="badge" style="font-size: 0.65rem; background: rgba(255,255,255,0.05);">Edge ML</span>
+                  <span class="badge" style="font-size: 0.65rem; background: rgba(255,255,255,0.05);">Zero-Cloud Edge</span>
                 </div>
               </div>
             </div>
 
-            <div
-              style="padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: space-between; margin-top: 0.5rem;">
-              <a href="docs/IT22254252_Gagana.pdf" target="_blank" rel="noopener noreferrer" class="badge"
-                style="font-size: 0.65rem; text-transform: none; display: flex; align-items: gap: 0.35rem;">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2">
-                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                  <polyline points="14 2 14 8 20 8"></polyline>
-                </svg>
-                <span>Report PDF ↗</span>
-              </a>
+            <div style="padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: space-between; margin-top: 0.5rem;">
+              <div style="display: flex; gap: 0.3rem; align-items: center; flex-wrap: wrap;">
+                <a href="https://drive.google.com/file/d/1Wn-Rh4djYV6XM0NxJ198kjKu1862SHPM/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="badge badge-blue" style="font-size: 0.62rem; text-transform: none; display: flex; align-items: center; gap: 0.25rem;" title="Draft Thesis">
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                  <span>Thesis ↗</span>
+                </a>
+                <a href="https://drive.google.com/file/d/1IgmpnJj8aHnALoRRuCxK-WSsFSzE7UfR/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="badge" style="font-size: 0.62rem; text-transform: none; display: flex; align-items: center; gap: 0.25rem;" title="Proposal Document">
+                  <span>Proposal ↗</span>
+                </a>
+              </div>
               <div style="display: flex; gap: 0.35rem;">
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-icon"
-                  style="padding: 0.4rem;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2">
-                    <path
-                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                    </path>
-                  </svg></a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn-icon"
-                  style="padding: 0.4rem;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2">
-                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                    <rect x="2" y="9" width="4" height="12"></rect>
-                    <circle cx="4" cy="4" r="2"></circle>
-                  </svg></a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-icon" style="padding: 0.4rem;" aria-label="Gagana GitHub">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn-icon" style="padding: 0.4rem;" aria-label="Gagana LinkedIn">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
               </div>
             </div>
           </div>
@@ -1720,68 +2705,59 @@
           <div class="team-card team-card-sanjana">
             <div>
               <div class="team-photo-frame">
-                <div class="team-avatar-fallback"
-                  style="background: linear-gradient(to bottom, rgba(245,158,11,0.15), rgba(0,0,0,0.8));">
-                  <div class="team-avatar-circle" style="border-color: rgba(245,158,11,0.4); color: var(--amber);">S
-                  </div>
-                  <span
-                    style="font-size: 0.65rem; font-family: var(--font-mono); color: var(--text-dim); margin-top: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase;">Localized
-                    Skin Analysis</span>
-                </div>
+                <img src="images/sanjana.jpeg" alt="Sanjana Deshan" class="team-photo">
                 <span class="badge badge-amber"
-                  style="position: absolute; top: 0.6rem; left: 0.6rem; font-size: 0.65rem; padding: 0.2rem 0.5rem; background: rgba(0,0,0,0.7); backdrop-filter: blur(8px);">Component
-                  03</span>
+                  style="position: absolute; top: 0.6rem; left: 0.6rem; font-size: 0.65rem; padding: 0.2rem 0.5rem; background: rgba(0,0,0,0.7); backdrop-filter: blur(8px);">Component 03</span>
                 <span class="badge"
                   style="position: absolute; top: 0.6rem; right: 0.6rem; font-size: 0.65rem; padding: 0.2rem 0.5rem; background: rgba(0,0,0,0.7); backdrop-filter: blur(8px);">IT22278876</span>
               </div>
 
-              <h3 style="font-size: 1.05rem; font-weight: 500; color: #fff;">Sanjana Deshan</h3>
-              <div
-                style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--amber); font-weight: 500; margin-top: 0.2rem; margin-bottom: 0.6rem;">
+              <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.25rem;">
+                <h3 style="font-size: 1.05rem; font-weight: 500; color: #fff;">Sanjana Deshan</h3>
+                <span class="badge badge-amber" style="font-size: 0.6rem; padding: 0.15rem 0.45rem;">Dataset &amp; CV Lead</span>
+              </div>
+              <div style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--amber); font-weight: 500; margin-top: 0.2rem; margin-bottom: 0.35rem;">
                 Facial-Condition Detection
               </div>
+              <a href="mailto:it22278876@my.sliit.lk" style="font-size: 0.7rem; font-family: var(--font-mono); color: var(--text-dim); display: inline-flex; align-items: center; gap: 0.35rem; margin-bottom: 0.6rem; text-decoration: none;" onmouseover="this.style.color='#fbbf24'" onmouseout="this.style.color='var(--text-dim)'">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <span>it22278876@my.sliit.lk</span>
+              </a>
 
               <div class="team-hover-panel">
-                <p
-                  style="font-size: 0.775rem; color: var(--text-muted); line-height: 1.55; font-weight: 300; margin-bottom: 0.75rem; padding-top: 0.5rem; border-top: 1px solid rgba(255,255,255,0.05);">
-                  High-resolution condition datasets and fine-tuned YOLO11n achieving 52.00% mAP@50 and 70.83% precision
-                  on Acne, Wrinkles, Moles.
-                </p>
+                <div style="padding-top: 0.5rem; border-top: 1px solid rgba(255,255,255,0.05); margin-bottom: 0.5rem;">
+                  <span style="font-size: 0.65rem; font-family: var(--font-mono); color: var(--amber); text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 0.25rem;">Academic Contribution &amp; Honors</span>
+                  <span class="badge badge-amber" style="font-size: 0.65rem; margin-bottom: 0.4rem;">1,200+ Localized Annotations</span>
+                  <p style="font-size: 0.775rem; color: var(--text-muted); line-height: 1.55; font-weight: 300;">
+                    High-resolution localized condition datasets and fine-tuned Ultralytics YOLO11n achieving 52.00% mAP@50 and 70.83% precision on Acne, Wrinkles, and Moles with Spatial CIoU loss.
+                  </p>
+                </div>
                 <div style="display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 0.75rem;">
                   <span class="badge" style="font-size: 0.65rem; background: rgba(255,255,255,0.05);">YOLO11n</span>
-                  <span class="badge" style="font-size: 0.65rem; background: rgba(255,255,255,0.05);">Ultralytics</span>
-                  <span class="badge" style="font-size: 0.65rem; background: rgba(255,255,255,0.05);">Spatial
-                    CIoU</span>
+                  <span class="badge" style="font-size: 0.65rem; background: rgba(255,255,255,0.05);">Spatial CIoU</span>
                   <span class="badge" style="font-size: 0.65rem; background: rgba(255,255,255,0.05);">Roboflow</span>
+                  <span class="badge" style="font-size: 0.65rem; background: rgba(255,255,255,0.05);">PyTorch</span>
                 </div>
               </div>
             </div>
 
-            <div
-              style="padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: space-between; margin-top: 0.5rem;">
-              <a href="docs/IT22278876_Sanjana.pdf" target="_blank" rel="noopener noreferrer" class="badge"
-                style="font-size: 0.65rem; text-transform: none; display: flex; align-items: center; gap: 0.35rem;">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2">
-                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                  <polyline points="14 2 14 8 20 8"></polyline>
-                </svg>
-                <span>Report PDF ↗</span>
-              </a>
+            <div style="padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: space-between; margin-top: 0.5rem;">
+              <div style="display: flex; gap: 0.3rem; align-items: center; flex-wrap: wrap;">
+                <a href="https://drive.google.com/file/d/1ygPcwYxZ0eZaDO7qhDypGFYBXl64kS3G/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="badge badge-amber" style="font-size: 0.62rem; text-transform: none; display: flex; align-items: center; gap: 0.25rem;" title="Draft Thesis">
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                  <span>Thesis ↗</span>
+                </a>
+                <a href="https://drive.google.com/file/d/1OJi84voT3KLS714hmv0ct7nGcxfDNr_7/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="badge" style="font-size: 0.62rem; text-transform: none; display: flex; align-items: center; gap: 0.25rem;" title="Proposal Document">
+                  <span>Proposal ↗</span>
+                </a>
+              </div>
               <div style="display: flex; gap: 0.35rem;">
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-icon"
-                  style="padding: 0.4rem;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2">
-                    <path
-                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                    </path>
-                  </svg></a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn-icon"
-                  style="padding: 0.4rem;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2">
-                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                    <rect x="2" y="9" width="4" height="12"></rect>
-                    <circle cx="4" cy="4" r="2"></circle>
-                  </svg></a>
+                <a href="https://github.com/Sanjana200292" target="_blank" rel="noopener noreferrer" class="btn-icon" style="padding: 0.4rem;" aria-label="Sanjana GitHub" title="GitHub: Sanjana200292">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/sanjana-deshan-853909350/" target="_blank" rel="noopener noreferrer" class="btn-icon" style="padding: 0.4rem;" aria-label="Sanjana LinkedIn" title="LinkedIn: sanjana-deshan">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
               </div>
             </div>
           </div>
@@ -1790,68 +2766,59 @@
           <div class="team-card team-card-ruchira">
             <div>
               <div class="team-photo-frame">
-                <div class="team-avatar-fallback"
-                  style="background: linear-gradient(to bottom, rgba(168,85,247,0.15), rgba(0,0,0,0.8));">
-                  <div class="team-avatar-circle" style="border-color: rgba(168,85,247,0.4); color: var(--purple);">R
-                  </div>
-                  <span
-                    style="font-size: 0.65rem; font-family: var(--font-mono); color: var(--text-dim); margin-top: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase;">Forensics
-                    &amp; ELA</span>
-                </div>
+                <img src="images/ruchira.jpeg" alt="Ruchira Gunawardhana" class="team-photo">
                 <span class="badge badge-purple"
-                  style="position: absolute; top: 0.6rem; left: 0.6rem; font-size: 0.65rem; padding: 0.2rem 0.5rem; background: rgba(0,0,0,0.7); backdrop-filter: blur(8px);">Component
-                  04</span>
+                  style="position: absolute; top: 0.6rem; left: 0.6rem; font-size: 0.65rem; padding: 0.2rem 0.5rem; background: rgba(0,0,0,0.7); backdrop-filter: blur(8px);">Component 04</span>
                 <span class="badge"
                   style="position: absolute; top: 0.6rem; right: 0.6rem; font-size: 0.65rem; padding: 0.2rem 0.5rem; background: rgba(0,0,0,0.7); backdrop-filter: blur(8px);">IT22276728</span>
               </div>
 
-              <h3 style="font-size: 1.05rem; font-weight: 500; color: #fff;">Ruchira Gunawardhana</h3>
-              <div
-                style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--purple); font-weight: 500; margin-top: 0.2rem; margin-bottom: 0.6rem;">
-                Deepfake Verification
+              <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.25rem;">
+                <h3 style="font-size: 1.05rem; font-weight: 500; color: #fff;">Ruchira Gunawardhana</h3>
+                <span class="badge badge-purple" style="font-size: 0.6rem; padding: 0.15rem 0.45rem;">Forensics Lead</span>
               </div>
+              <div style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--purple); font-weight: 500; margin-top: 0.2rem; margin-bottom: 0.35rem;">
+                Deepfake Verification &amp; Robustness
+              </div>
+              <a href="mailto:it22276728@my.sliit.lk" style="font-size: 0.7rem; font-family: var(--font-mono); color: var(--text-dim); display: inline-flex; align-items: center; gap: 0.35rem; margin-bottom: 0.6rem; text-decoration: none;" onmouseover="this.style.color='#c084fc'" onmouseout="this.style.color='var(--text-dim)'">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <span>it22276728@my.sliit.lk</span>
+              </a>
 
               <div class="team-hover-panel">
-                <p
-                  style="font-size: 0.775rem; color: var(--text-muted); line-height: 1.55; font-weight: 300; margin-bottom: 0.75rem; padding-top: 0.5rem; border-top: 1px solid rgba(255,255,255,0.05);">
-                  Inductive bias vs. transformer attention across 2,000 deepfakes, proving ResNet-50's 92.55% robustness
-                  over Swin Transformer.
-                </p>
+                <div style="padding-top: 0.5rem; border-top: 1px solid rgba(255,255,255,0.05); margin-bottom: 0.5rem;">
+                  <span style="font-size: 0.65rem; font-family: var(--font-mono); color: var(--purple); text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 0.25rem;">Academic Contribution &amp; Honors</span>
+                  <span class="badge badge-purple" style="font-size: 0.65rem; margin-bottom: 0.4rem;">92.55% Forensic Robustness</span>
+                  <p style="font-size: 0.775rem; color: var(--text-muted); line-height: 1.55; font-weight: 300;">
+                    Inductive bias vs. transformer attention across 2,000 deepfakes, proving ResNet-50's 92.55% robustness over Swin Transformer under compression and domain shifts.
+                  </p>
+                </div>
                 <div style="display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 0.75rem;">
                   <span class="badge" style="font-size: 0.65rem; background: rgba(255,255,255,0.05);">ResNet-50</span>
-                  <span class="badge" style="font-size: 0.65rem; background: rgba(255,255,255,0.05);">Swin
-                    Transformer</span>
+                  <span class="badge" style="font-size: 0.65rem; background: rgba(255,255,255,0.05);">Swin Transformer</span>
                   <span class="badge" style="font-size: 0.65rem; background: rgba(255,255,255,0.05);">ELA</span>
                   <span class="badge" style="font-size: 0.65rem; background: rgba(255,255,255,0.05);">PyTorch</span>
                 </div>
               </div>
             </div>
 
-            <div
-              style="padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: space-between; margin-top: 0.5rem;">
-              <a href="docs/IT22276728_Ruchira.pdf" target="_blank" rel="noopener noreferrer" class="badge"
-                style="font-size: 0.65rem; text-transform: none; display: flex; align-items: center; gap: 0.35rem;">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#c084fc" stroke-width="2">
-                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                  <polyline points="14 2 14 8 20 8"></polyline>
-                </svg>
-                <span>Report PDF ↗</span>
-              </a>
+            <div style="padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: space-between; margin-top: 0.5rem;">
+              <div style="display: flex; gap: 0.3rem; align-items: center; flex-wrap: wrap;">
+                <a href="https://drive.google.com/file/d/1QQASb528RGCp3ASByTyiJq8sqTSXPgmT/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="badge badge-purple" style="font-size: 0.62rem; text-transform: none; display: flex; align-items: center; gap: 0.25rem;" title="Draft Thesis">
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                  <span>Thesis ↗</span>
+                </a>
+                <a href="https://drive.google.com/file/d/1xR4RMzxbxJVRvqOkCOcK_3TZgkhzGDHS/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="badge" style="font-size: 0.62rem; text-transform: none; display: flex; align-items: center; gap: 0.25rem;" title="Proposal Document">
+                  <span>Proposal ↗</span>
+                </a>
+              </div>
               <div style="display: flex; gap: 0.35rem;">
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-icon"
-                  style="padding: 0.4rem;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2">
-                    <path
-                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                    </path>
-                  </svg></a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn-icon"
-                  style="padding: 0.4rem;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2">
-                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                    <rect x="2" y="9" width="4" height="12"></rect>
-                    <circle cx="4" cy="4" r="2"></circle>
-                  </svg></a>
+                <a href="https://github.com/ruchiraRTG" target="_blank" rel="noopener noreferrer" class="btn-icon" style="padding: 0.4rem;" aria-label="Ruchira GitHub" title="GitHub: ruchiraRTG">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/ruchira-tharupathi-0b9b6334b/" target="_blank" rel="noopener noreferrer" class="btn-icon" style="padding: 0.4rem;" aria-label="Ruchira LinkedIn" title="LinkedIn: ruchira-tharupathi">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
               </div>
             </div>
           </div>
@@ -1870,76 +2837,110 @@
           </div>
         </div>
 
-        <div class="supervisor-grid">
+        <div class="supervisor-grid" style="margin: 0 auto;">
           <!-- Dr. Junius Anjana -->
-          <div class="supervisor-card">
-            <div class="supervisor-photo-frame">
-              <img src="images/junius.jpg" alt="Dr. Junius Anjana" class="supervisor-photo">
+          <div class="team-card team-card-junius">
+            <div>
+              <div class="team-photo-frame">
+                <img src="images/junius.jpg" alt="Dr. Junius Anjana" class="team-photo">
+                <span class="badge badge-blue"
+                  style="position: absolute; top: 0.6rem; left: 0.6rem; font-size: 0.65rem; padding: 0.2rem 0.5rem; background: rgba(0,0,0,0.7); backdrop-filter: blur(8px);">Project Supervisor</span>
+                <span class="badge"
+                  style="position: absolute; top: 0.6rem; right: 0.6rem; font-size: 0.65rem; padding: 0.2rem 0.5rem; background: rgba(0,0,0,0.7); backdrop-filter: blur(8px);">Assistant Professor</span>
+              </div>
+
+              <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.25rem;">
+                <h3 style="font-size: 1.05rem; font-weight: 500; color: #fff;">Dr. Junius Anjana</h3>
+                <span class="badge badge-blue" style="font-size: 0.6rem; padding: 0.15rem 0.45rem;">Primary Supervisor</span>
+              </div>
+              <div style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--blue); font-weight: 500; margin-top: 0.2rem; margin-bottom: 0.35rem;">
+                Department of Information Technology
+              </div>
+              <a href="mailto:junius.a@sliit.lk" style="font-size: 0.7rem; font-family: var(--font-mono); color: var(--text-dim); display: inline-flex; align-items: center; gap: 0.35rem; margin-bottom: 0.6rem; text-decoration: none;" onmouseover="this.style.color='#60a5fa'" onmouseout="this.style.color='var(--text-dim)'">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <span>junius.a@sliit.lk</span>
+              </a>
+
+              <!-- Hover revealed panel -->
+              <div class="team-hover-panel">
+                <div style="padding-top: 0.5rem; border-top: 1px solid rgba(255,255,255,0.05); margin-bottom: 0.5rem;">
+                  <span style="font-size: 0.65rem; font-family: var(--font-mono); color: var(--blue); text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 0.25rem;">Academic Advisory &amp; Specialization</span>
+                  <span class="badge badge-blue" style="font-size: 0.65rem; margin-bottom: 0.4rem;">Computer Vision &amp; Deep Learning</span>
+                  <p style="font-size: 0.775rem; color: var(--text-muted); line-height: 1.55; font-weight: 300;">
+                    Academic mentorship and architectural oversight across multi-task facial biometric pipelines, low-light illumination recovery, and IEEE conference publication governance.
+                  </p>
+                </div>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 0.75rem;">
+                  <span class="badge" style="font-size: 0.65rem; background: rgba(255,255,255,0.05);">Computer Vision</span>
+                  <span class="badge" style="font-size: 0.65rem; background: rgba(255,255,255,0.05);">Deep Learning</span>
+                  <span class="badge" style="font-size: 0.65rem; background: rgba(255,255,255,0.05);">Biometric Systems</span>
+                  <span class="badge" style="font-size: 0.65rem; background: rgba(255,255,255,0.05);">AI Research</span>
+                </div>
+              </div>
             </div>
-            <div style="min-width: 0; flex: 1;">
-              <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.35rem;">
-                <span class="badge badge-blue">Project Supervisor</span>
-                <span class="badge">Assistant Professor</span>
-              </div>
-              <h4 style="font-size: 1.25rem; font-weight: 500; color: #fff;">Dr. Junius Anjana</h4>
-              <div
-                style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted); margin-top: 0.2rem;">
-                Department of Information Technology, Faculty of Computing
-              </div>
-              <div style="font-size: 0.75rem; color: var(--text-faint); margin-top: 0.15rem;">
-                Sri Lanka Institute of Information Technology (SLIIT)
-              </div>
-              <div style="margin-top: 0.85rem; padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.05);">
-                <span
-                  style="font-size: 0.7rem; font-family: var(--font-mono); color: var(--text-dim); display: block; margin-bottom: 0.5rem;">
-                  Specialization: <strong style="color: var(--text-muted); font-weight: 400;">Computer Vision, Deep
-                    Learning &amp; AI</strong>
-                </span>
-                <a href="mailto:junius.a@sliit.lk" class="badge badge-blue"
-                  style="font-size: 0.75rem; text-transform: none;">
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                    <polyline points="22,6 12,13 2,6"></polyline>
-                  </svg>
-                  <span>junius.a@sliit.lk</span>
-                </a>
-              </div>
+
+            <!-- Footer -->
+            <div style="padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: space-between; margin-top: 0.5rem;">
+              <span class="badge" style="font-size: 0.62rem; text-transform: none; display: flex; align-items: center; gap: 0.3rem;">
+                <span>🏛️ SLIIT Faculty of Computing</span>
+              </span>
+              <a href="mailto:junius.a@sliit.lk" class="badge badge-blue" style="font-size: 0.62rem; text-transform: none; display: flex; align-items: center; gap: 0.25rem;" title="Send Email">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <span>Email ↗</span>
+              </a>
             </div>
           </div>
 
           <!-- Ms. Pubudika Wijesundara -->
-          <div class="supervisor-card">
-            <div class="supervisor-photo-frame">
-              <img src="images/pubudika.jpg" alt="Ms. Pubudika Wijesundara" class="supervisor-photo">
-            </div>
-            <div style="min-width: 0; flex: 1;">
-              <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.35rem;">
-                <span class="badge badge-purple">Project Co-Supervisor</span>
-                <span class="badge">Assistant Lecturer</span>
+          <div class="team-card team-card-pubudika">
+            <div>
+              <div class="team-photo-frame">
+                <img src="images/pubudika.jpg" alt="Ms. Pubudika Wijesundara" class="team-photo">
+                <span class="badge badge-purple"
+                  style="position: absolute; top: 0.6rem; left: 0.6rem; font-size: 0.65rem; padding: 0.2rem 0.5rem; background: rgba(0,0,0,0.7); backdrop-filter: blur(8px);">Project Co-Supervisor</span>
+                <span class="badge"
+                  style="position: absolute; top: 0.6rem; right: 0.6rem; font-size: 0.65rem; padding: 0.2rem 0.5rem; background: rgba(0,0,0,0.7); backdrop-filter: blur(8px);">Assistant Lecturer</span>
               </div>
-              <h4 style="font-size: 1.25rem; font-weight: 500; color: #fff;">Ms. Pubudika Wijesundara</h4>
-              <div
-                style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted); margin-top: 0.2rem;">
+
+              <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.25rem;">
+                <h3 style="font-size: 1.05rem; font-weight: 500; color: #fff;">Ms. Pubudika Wijesundara</h3>
+                <span class="badge badge-purple" style="font-size: 0.6rem; padding: 0.15rem 0.45rem;">Co-Supervisor</span>
+              </div>
+              <div style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--purple); font-weight: 500; margin-top: 0.2rem; margin-bottom: 0.35rem;">
                 Faculty of Computing
               </div>
-              <div style="font-size: 0.75rem; color: var(--text-faint); margin-top: 0.15rem;">
-                Sri Lanka Institute of Information Technology (SLIIT)
+              <a href="mailto:pubudika.w@sliit.lk" style="font-size: 0.7rem; font-family: var(--font-mono); color: var(--text-dim); display: inline-flex; align-items: center; gap: 0.35rem; margin-bottom: 0.6rem; text-decoration: none;" onmouseover="this.style.color='#c084fc'" onmouseout="this.style.color='var(--text-dim)'">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <span>pubudika.w@sliit.lk</span>
+              </a>
+
+              <!-- Hover revealed panel -->
+              <div class="team-hover-panel">
+                <div style="padding-top: 0.5rem; border-top: 1px solid rgba(255,255,255,0.05); margin-bottom: 0.5rem;">
+                  <span style="font-size: 0.65rem; font-family: var(--font-mono); color: var(--purple); text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 0.25rem;">Academic Advisory &amp; Specialization</span>
+                  <span class="badge badge-purple" style="font-size: 0.65rem; margin-bottom: 0.4rem;">Algorithmic Fairness &amp; Affective ML</span>
+                  <p style="font-size: 0.775rem; color: var(--text-muted); line-height: 1.55; font-weight: 300;">
+                    Academic mentorship and experimental validation across algorithmic fairness, demographic calibration, affective computing, and edge machine learning deployment.
+                  </p>
+                </div>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 0.75rem;">
+                  <span class="badge" style="font-size: 0.65rem; background: rgba(255,255,255,0.05);">Algorithmic Fairness</span>
+                  <span class="badge" style="font-size: 0.65rem; background: rgba(255,255,255,0.05);">Affective Computing</span>
+                  <span class="badge" style="font-size: 0.65rem; background: rgba(255,255,255,0.05);">Edge ML</span>
+                  <span class="badge" style="font-size: 0.65rem; background: rgba(255,255,255,0.05);">Biometric Ethics</span>
+                </div>
               </div>
-              <div style="margin-top: 0.85rem; padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.05);">
-                <span
-                  style="font-size: 0.7rem; font-family: var(--font-mono); color: var(--text-dim); display: block; margin-bottom: 0.5rem;">
-                  Specialization: <strong style="color: var(--text-muted); font-weight: 400;">Algorithmic Fairness,
-                    Affective Computing &amp; Edge ML</strong>
-                </span>
-                <a href="mailto:pubudika.w@sliit.lk" class="badge badge-purple"
-                  style="font-size: 0.75rem; text-transform: none;">
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                    <polyline points="22,6 12,13 2,6"></polyline>
-                  </svg>
-                  <span>pubudika.w@sliit.lk</span>
-                </a>
-              </div>
+            </div>
+
+            <!-- Footer -->
+            <div style="padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: space-between; margin-top: 0.5rem;">
+              <span class="badge" style="font-size: 0.62rem; text-transform: none; display: flex; align-items: center; gap: 0.3rem;">
+                <span>🏛️ SLIIT Faculty of Computing</span>
+              </span>
+              <a href="mailto:pubudika.w@sliit.lk" class="badge badge-purple" style="font-size: 0.62rem; text-transform: none; display: flex; align-items: center; gap: 0.25rem;" title="Send Email">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <span>Email ↗</span>
+              </a>
             </div>
           </div>
         </div>
@@ -1948,7 +2949,195 @@
   </section>
 
   <!-- =========================================================================
-       9. FOOTER SECTION
+       9. CONTACT US SECTION
+       ========================================================================= -->
+  <section id="contact" class="section-py" style="background: radial-gradient(circle at 50% 10%, rgba(6,182,212,0.04), transparent 70%);">
+    <div class="max-w-container">
+      <div class="section-header">
+        <div class="badge badge-cyan">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          <span>Communications &amp; Inquiries</span>
+        </div>
+        <h2 class="section-title">Contact Research Team &amp; Faculty Advisory</h2>
+        <p class="section-desc">
+          For academic collaborations, dataset access requests, conference inquiries, or technical consultations regarding the Faceo research framework, please get in touch with our cohort.
+        </p>
+      </div>
+
+      <div class="contact-section-grid">
+        <!-- Left: Official Institutional Contact Details -->
+        <div class="contact-info-panel">
+          <!-- Card 1: Academic Institution -->
+          <div class="contact-detail-card">
+            <div class="contact-icon-box" style="color: var(--cyan);">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div>
+              <span style="font-size: 0.7rem; font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.08em; color: var(--cyan); display: block; margin-bottom: 0.25rem;">
+                Academic Institution &amp; Lab
+              </span>
+              <h4 style="font-size: 1rem; font-weight: 500; color: #fff; margin-bottom: 0.35rem;">
+                SLIIT Faculty of Computing
+              </h4>
+              <p style="font-size: 0.8rem; color: var(--text-dim); line-height: 1.55; font-weight: 300;">
+                Department of Computer Science &amp; Software Engineering<br>
+                Advanced Computer Vision &amp; AI Research Laboratory<br>
+                New Kandy Road, Malabe 10115, Sri Lanka
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2: Official Electronic Mail -->
+          <div class="contact-detail-card">
+            <div class="contact-icon-box" style="color: var(--emerald);">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <div>
+              <span style="font-size: 0.7rem; font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.08em; color: var(--emerald); display: block; margin-bottom: 0.25rem;">
+                Official Electronic Mail
+              </span>
+              <h4 style="font-size: 1rem; font-weight: 500; color: #fff; margin-bottom: 0.35rem;">
+                Research Group Communications
+              </h4>
+              <div style="display: flex; flex-direction: column; gap: 0.35rem; margin-top: 0.35rem;">
+                <a href="mailto:facialanalysis.lk@gmail.com" class="badge badge-emerald" style="text-transform: none; font-size: 0.75rem; width: fit-content; text-decoration: none;">
+                  <span>✉</span> facialanalysis.lk@gmail.com
+                </a>
+                <a href="mailto:it22541970@my.sliit.lk" style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--text-dim); text-decoration: none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--text-dim)'">
+                  Lead Researcher: it22541970@my.sliit.lk
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Telephone & Extensions -->
+          <div class="contact-detail-card">
+            <div class="contact-icon-box" style="color: var(--amber);">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </div>
+            <div>
+              <span style="font-size: 0.7rem; font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.08em; color: var(--amber); display: block; margin-bottom: 0.25rem;">
+                Telephone &amp; Hotlines
+              </span>
+              <h4 style="font-size: 1rem; font-weight: 500; color: #fff; margin-bottom: 0.35rem;">
+                SLIIT Computing General Lines
+              </h4>
+              <p style="font-size: 0.8rem; color: var(--text-dim); line-height: 1.55; font-weight: 300;">
+                General: <a href="tel:+94117544801" style="color: #fde68a; font-family: var(--font-mono); text-decoration: none;">+94 11 754 4801</a><br>
+                Department Desk: <a href="tel:+94117544802" style="color: #fde68a; font-family: var(--font-mono); text-decoration: none;">+94 11 754 4802</a><br>
+                <span style="font-size: 0.725rem; color: var(--text-faint); margin-top: 0.2rem; display: block;">Available Monday – Friday, 08:30 – 17:00 (SLST)</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4: Code Repository & Academic License -->
+          <div class="contact-detail-card">
+            <div class="contact-icon-box" style="color: var(--purple);">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </div>
+            <div>
+              <span style="font-size: 0.7rem; font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.08em; color: var(--purple); display: block; margin-bottom: 0.25rem;">
+                Open Science &amp; Source Code
+              </span>
+              <h4 style="font-size: 1rem; font-weight: 500; color: #fff; margin-bottom: 0.35rem;">
+                GitHub Research Repository
+              </h4>
+              <p style="font-size: 0.8rem; color: var(--text-dim); line-height: 1.55; font-weight: 300;">
+                All pre-processing pipelines, evaluation protocols, and benchmark scripts are maintained under the official SLIIT repository.
+              </p>
+              <a href="https://github.com/R26-IT-011/FACEO" target="_blank" rel="noopener noreferrer" class="badge badge-purple" style="text-transform: none; font-size: 0.7rem; margin-top: 0.4rem; display: inline-flex; align-items: center; gap: 0.35rem; text-decoration: none;">
+                <span>View on GitHub ↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Interactive Contact Form Card -->
+        <div class="contact-form-card">
+          <div style="margin-bottom: 1.5rem;">
+            <div class="badge badge-blue" style="font-size: 0.65rem; margin-bottom: 0.4rem;">
+              Direct Dispatch
+            </div>
+            <h3 style="font-size: 1.35rem; font-weight: 500; color: #fff;">Send a Research Query</h3>
+            <p style="font-size: 0.825rem; color: var(--text-dim); margin-top: 0.25rem; font-weight: 300;">
+              Leave a structured dispatch for the student researchers or project supervisors. We typically respond within 24–48 hours during academic terms.
+            </p>
+          </div>
+
+          <form id="contact-form" autocomplete="on">
+            <div style="display: grid; grid-template-columns: 1fr; gap: 1rem;">
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Full Name / Title *</label>
+                <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. Prof. / Dr. / Researcher Name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Institutional / Professional Email *</label>
+                <input type="email" id="contact-email" name="email" class="form-input" placeholder="e.g. yourname@university.edu" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-subject" class="form-label">Nature of Inquiry *</label>
+              <select id="contact-subject" name="subject" class="form-select" required>
+                <option value="research-collaboration">Academic Research Collaboration</option>
+                <option value="dataset-access">Sri Lankan Facial Dataset Access Request</option>
+                <option value="conference-publication">IEEE ICAC Publication &amp; Citation Query</option>
+                <option value="technical-evaluation">Model Benchmarking &amp; Edge Pipeline Inquiry</option>
+                <option value="general-inquiry">General Student Project Feedback</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Dispatch Message *</label>
+              <textarea id="contact-message" name="message" class="form-textarea" placeholder="Describe your inquiry, institutional background, intended use case, or collaboration scope in detail..." required></textarea>
+            </div>
+
+            <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-top: 1.5rem;">
+              <button type="submit" id="contact-submit-btn" class="btn-cta-primary" style="padding: 0.85rem 1.75rem; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+                <span>Send Dispatch</span>
+              </button>
+
+              <a href="mailto:facialanalysis.lk@gmail.com?subject=Faceo%20Research%20Inquiry" class="badge" style="font-size: 0.75rem; text-transform: none; padding: 0.5rem 0.85rem; color: var(--text-dim); text-decoration: none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--text-dim)'">
+                <span>Or open direct mail client ↗</span>
+              </a>
+            </div>
+
+            <!-- Client-Side Feedback Alert -->
+            <div id="contact-success-alert" class="form-success-alert">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2" style="flex-shrink: 0;">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+              <div>
+                <strong style="color: #fff; font-weight: 500; display: block;">Message Dispatched Successfully!</strong>
+                <span style="font-size: 0.8rem; color: #a7f3d0;">Thank you for your interest. A member of our research team will respond to your institutional email address promptly.</span>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       10. FOOTER SECTION
        ========================================================================= -->
   <footer class="footer-wrap">
     <div class="max-w-container">
@@ -1984,19 +3173,23 @@
           <ul
             style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.8rem; color: var(--text-dim); font-weight: 300;">
             <li><a href="#overview" style="transition: color 0.2s;" onmouseover="this.style.color='#fff'"
-                onmouseout="this.style.color=''">Overview &amp; Metrics</a></li>
+                onmouseout="this.style.color=''">Home Overview</a></li>
+            <li><a href="#domain" style="transition: color 0.2s;" onmouseover="this.style.color='#fff'"
+                onmouseout="this.style.color=''">Literature Survey</a></li>
+            <li><a href="#research-gap" style="transition: color 0.2s;" onmouseover="this.style.color='#fff'"
+                onmouseout="this.style.color=''">Research Gap</a></li>
             <li><a href="#problem" style="transition: color 0.2s;" onmouseover="this.style.color='#fff'"
                 onmouseout="this.style.color=''">Problem &amp; Objectives</a></li>
             <li><a href="#architecture" style="transition: color 0.2s;" onmouseover="this.style.color='#fff'"
-                onmouseout="this.style.color=''">System Architecture</a></li>
-            <li><a href="#components" style="transition: color 0.2s;" onmouseover="this.style.color='#fff'"
-                onmouseout="this.style.color=''">Research Components</a></li>
-            <li><a href="#tech-stack" style="transition: color 0.2s;" onmouseover="this.style.color='#fff'"
-                onmouseout="this.style.color=''">Technologies Used</a></li>
+                onmouseout="this.style.color=''">Methodology &amp; Pipeline</a></li>
+            <li><a href="#milestones" style="transition: color 0.2s;" onmouseover="this.style.color='#fff'"
+                onmouseout="this.style.color=''">Milestones &amp; Rubrics</a></li>
             <li><a href="#documents" style="transition: color 0.2s;" onmouseover="this.style.color='#fff'"
-                onmouseout="this.style.color=''">Documents &amp; Paper</a></li>
+                onmouseout="this.style.color=''">Documents &amp; Reports</a></li>
             <li><a href="#team" style="transition: color 0.2s;" onmouseover="this.style.color='#fff'"
-                onmouseout="this.style.color=''">Team &amp; Supervisors</a></li>
+                onmouseout="this.style.color=''">Research Team</a></li>
+            <li><a href="#contact" style="transition: color 0.2s;" onmouseover="this.style.color='#fff'"
+                onmouseout="this.style.color=''">Contact Us</a></li>
           </ul>
         </div>
 
@@ -2158,7 +3351,7 @@
               </a>
             </div>
           </div>
-          <iframe id="modal-pdf-iframe" class="modal-iframe" src="about:blank" title="Document PDF Preview"></iframe>
+          <iframe id="modal-pdf-iframe" class="modal-iframe" src="about:blank" title="Document PDF Preview" style="width: 100%; height: 540px; min-height: 480px; border: 0; display: block; background: #18181b;"></iframe>
         </div>
 
         <!-- Scope & Abstract -->
