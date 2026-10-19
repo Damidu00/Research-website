@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollToTop();
   initContactForm();
   initScrollReveal();
+  initWebShowcaseCard();
 });
 
 /* ─────────────────────────────────────────────────────────────
@@ -630,6 +631,24 @@ const DOCS_METADATA = {
       'Panel feedback addressing algorithmic fairness & ethics'
     ]
   },
+  pp3: {
+    title: 'Research Project Progress Presentation 3 (PP3)',
+    subtitle: 'Final Progress Review & Defense Slide Deck',
+    fileSize: 'Slide Deck',
+    format: 'PDF',
+    date: 'Final Academic Evaluation • PP3 Defense',
+    filePath: 'https://drive.google.com/file/d/1E3nODiyeu9psNf9ShanXRIAlx026mGGC/view?usp=sharing',
+    driveUrl: 'https://drive.google.com/file/d/1E3nODiyeu9psNf9ShanXRIAlx026mGGC/view?usp=sharing',
+    previewUrl: 'https://drive.google.com/file/d/1E3nODiyeu9psNf9ShanXRIAlx026mGGC/preview',
+    abstract: 'Final academic progress presentation (PP3 / Final Defense) presented to the SLIIT Faculty of Computing examination panel. Evaluates 100% completed multi-task facial analysis convergence, adaptive CLAHE low-light emotion equalization, zero-cloud edge demographic profiling with Face-API.js, YOLO11n localized condition detection, and ResNet-50 cross-dataset forensic robustness on Sri Lankan faces.',
+    topicsCovered: [
+      'Comprehensive multi-task facial analysis system integration & pipeline architecture',
+      'Final model loss curves, confusion matrices, and empirical ablation audits',
+      'Cross-dataset generalization and demographic bias mitigations on Sri Lankan cohorts',
+      'Client-side zero-cloud real-time edge inference prototype demonstration (<38ms latency)',
+      'Academic research paper publication trajectory and examination panel defense'
+    ]
+  },
   paper: {
     title: 'IEEE Conference Research Paper',
     subtitle: 'A Multi-Task Evaluation of Emotion, Facial Conditions, and Deepfake Detection',
@@ -935,6 +954,34 @@ function initScrollReveal() {
   targets.forEach(target => {
     target.classList.add('reveal-on-scroll');
     observer.observe(target);
+  });
+}
+
+/* ─────────────────────────────────────────────────────────────
+   10. INTERACTIVE WEBSITE SUBMISSION SHOWCASE CARD
+   ───────────────────────────────────────────────────────────── */
+function initWebShowcaseCard() {
+  const card = document.getElementById('web-submission-card');
+  const toggle = document.getElementById('web-expand-toggle');
+
+  if (!card) return;
+
+  if (toggle) {
+    toggle.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      card.classList.toggle('is-expanded');
+    });
+  }
+
+  // Allow clicking on mobile or keyboard space/enter to toggle
+  card.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      if (e.target === card || e.target === toggle) {
+        e.preventDefault();
+        card.classList.toggle('is-expanded');
+      }
+    }
   });
 }
 

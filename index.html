@@ -16,7 +16,7 @@
     rel="stylesheet">
 
   <!-- Vanilla CSS Style (cache-busted) -->
-  <link rel="stylesheet" href="css/style.css?v=3.0">
+  <link rel="stylesheet" href="css/style.css?v=3.1">
   <link rel="icon" type="image/png" href="images/faceo-logo.png">
 </head>
 
@@ -1652,8 +1652,8 @@
           </div>
         </div>
 
-        <!-- MILESTONE 10: FINAL PRESENTATION AND VIVA -->
-        <div class="milestone-timeline-item">
+        <!-- MILESTONE 10: FINAL PRESENTATION AND VIVA (PP3) -->
+        <div class="milestone-timeline-item completed">
           <div class="milestone-timeline-dot"></div>
           <div class="milestone-timeline-card">
             <div class="milestone-card-top">
@@ -1666,21 +1666,27 @@
                 </svg>
                 <span>19th – 21st October 2026</span>
               </div>
-              <span class="milestone-status-pill upcoming">
+              <span class="milestone-status-pill completed">
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <polyline points="12 6 12 12 16 14"></polyline>
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
                 </svg>
-                Upcoming
+                Defense Ready
               </span>
             </div>
-            <h3 class="milestone-title-text">Final Presentation and Viva</h3>
-            <p class="milestone-desc-text">Final academic defense, live prototype demonstration, and viva voce examination.</p>
+            <h3 class="milestone-title-text">Final Presentation and Viva (PP3)</h3>
+            <p class="milestone-desc-text">Final academic defense, live prototype demonstration, and viva voce examination before the SLIIT panel.</p>
+            <div style="margin-top: 0.5rem; margin-bottom: 0.25rem;">
+              <button class="badge badge-purple btn-doc-preview" data-preview-doc="pp3" style="font-size: 0.65rem; text-transform: none; display: inline-flex; align-items: center; gap: 0.35rem; cursor: pointer; border: 1px solid rgba(168,85,247,0.3); background: rgba(168,85,247,0.15); color: #d8b4fe;" title="Preview PP3 Slide Deck">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                <span>Defense Slides (PP3): View Slide Deck ↗</span>
+              </button>
+            </div>
             <div class="milestone-card-bottom">
-              <span class="milestone-marks-info">Marks Allocated: <strong>20</strong></span>
+              <span class="milestone-marks-info">Marks Allocated: <strong>20 (Submitted)</strong></span>
               <div class="milestone-progress-track">
                 <div class="milestone-progress-bar-bg">
-                  <div class="milestone-progress-bar-fill" style="width: 20%;"></div>
+                  <div class="milestone-progress-bar-fill" style="width: 100%; background: #a855f7;"></div>
                 </div>
                 <span class="milestone-weightage-text">20% Weightage</span>
               </div>
@@ -2472,70 +2478,183 @@
             <p class="milestone-desc">Official deployed web repository showcasing all project deliverables, empirical architecture benchmarks, interactive artifacts, and academic advisory.</p>
           </div>
 
-          <div class="doc-card doc-card-emerald" style="width: 100%;">
-            <!-- Header bar -->
-            <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1.25rem;">
+          <div class="web-showcase-card" id="web-submission-card" tabindex="0">
+            <!-- Top bar: Identity & Live Deployment Status -->
+            <div class="web-showcase-topbar">
               <div>
-                <span style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--emerald); font-weight: 600; display: block;">VERCEL PRODUCTION HOST</span>
-                <h4 style="font-size: 1.15rem; font-weight: 500; color: #fff; margin-top: 0.2rem;">Faceo | FacialAnalysis-LK Live Platform</h4>
-                <a href="https://web-mu-blush-90.vercel.app/" target="_blank" rel="noopener noreferrer" style="font-size: 0.825rem; font-family: var(--font-mono); color: #6ee7b7; display: inline-flex; align-items: center; gap: 0.35rem; margin-top: 0.25rem; text-decoration: none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">
+                <span class="web-platform-badge">VERCEL PRODUCTION HOST</span>
+                <h4 class="web-showcase-title">Faceo | FacialAnalysis-LK Live Platform</h4>
+                <a href="https://web-mu-blush-90.vercel.app/" target="_blank" rel="noopener noreferrer" class="web-live-link-pill">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
                   <span>https://web-mu-blush-90.vercel.app/</span>
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                 </a>
               </div>
-              <span class="badge badge-emerald" style="font-size: 0.75rem; padding: 0.35rem 0.75rem; display: flex; align-items: center; gap: 0.4rem;">
-                <span style="width: 8px; height: 8px; border-radius: 50%; background: #10b981; box-shadow: 0 0 10px #10b981;"></span>
+              <div class="web-status-pill">
+                <span class="web-pulse-dot"></span>
                 <span>Active • Deployed</span>
-              </span>
+              </div>
             </div>
 
-            <!-- Browser Mockup Window with webImage.png -->
-            <a href="https://web-mu-blush-90.vercel.app/" target="_blank" rel="noopener noreferrer" style="display: block; text-decoration: none; border-radius: 0.85rem; overflow: hidden; border: 1px solid rgba(255,255,255,0.12); background: rgba(0,0,0,0.8); margin-bottom: 1.25rem; transition: transform 0.3s ease, border-color 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)'; this.style.borderColor='rgba(16,185,129,0.5)';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='rgba(255,255,255,0.12)';">
-              <!-- Window top bar -->
-              <div style="display: flex; align-items: center; justify-content: space-between; padding: 0.6rem 1rem; background: rgba(255,255,255,0.04); border-bottom: 1px solid rgba(255,255,255,0.08);">
-                <div style="display: flex; gap: 0.4rem; align-items: center;">
-                  <span style="width: 10px; height: 10px; border-radius: 50%; background: #ef4444; opacity: 0.85;"></span>
-                  <span style="width: 10px; height: 10px; border-radius: 50%; background: #f59e0b; opacity: 0.85;"></span>
-                  <span style="width: 10px; height: 10px; border-radius: 50%; background: #10b981; opacity: 0.85;"></span>
+            <!-- Browser Mockup Window with Photo (Clickable) -->
+            <a href="https://web-mu-blush-90.vercel.app/" target="_blank" rel="noopener noreferrer" class="web-mockup-frame" title="Click to open Faceo Live Platform">
+              <div class="web-mockup-header">
+                <div class="web-mockup-dots">
+                  <span class="dot-red"></span>
+                  <span class="dot-yellow"></span>
+                  <span class="dot-green"></span>
                 </div>
-                <div style="display: flex; align-items: center; gap: 0.35rem; background: rgba(0,0,0,0.6); padding: 0.2rem 0.85rem; border-radius: 0.5rem; font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-dim); max-width: 70%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
-                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                <div class="web-mockup-address">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
                   <span>https://web-mu-blush-90.vercel.app/</span>
                 </div>
-                <span style="font-size: 0.65rem; color: var(--emerald); font-family: var(--font-mono);">SSL Secured</span>
+                <span class="web-mockup-ssl">SSL Secured</span>
               </div>
-              <!-- Screenshot image -->
-              <div style="width: 100%; max-height: 400px; overflow: hidden; position: relative; background: #000;">
-                <img src="images/webImage.jpg" alt="Faceo Live Website Preview" style="width: 100%; height: auto; display: block; object-fit: cover; object-position: top center;">
+              <div class="web-mockup-preview">
+                <img src="images/webImage.jpg" alt="Faceo Live Website Preview" loading="lazy">
+                <div class="web-mockup-overlay">
+                  <span class="web-overlay-btn">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                    <span>Launch Live Website</span>
+                  </span>
+                </div>
               </div>
             </a>
 
-            <!-- Info ribbon -->
-            <div style="padding: 0.85rem 1rem; border-radius: 0.75rem; background: rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.06); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1rem;">
-              <div style="font-size: 0.75rem; color: var(--text-dim); line-height: 1.5;">
-                <strong style="color: #fff; font-weight: 400;">Deliverable Scope:</strong> Full interactive portfolio with responsive documentation viewer, multi-task dataset audits, and academic supervision details.
+            <!-- Quick Action Row: Photo, Live Link and GitHub (Always Visible) -->
+            <div class="web-quick-actions-bar">
+              <div class="web-action-buttons">
+                <a href="https://web-mu-blush-90.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-web-primary">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                  </svg>
+                  <span>Visit Live Website ↗</span>
+                </a>
+                <a href="https://github.com/R26-IT-011/FACEO" target="_blank" rel="noopener noreferrer" class="btn-web-github" title="View Source on GitHub">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  <span>GitHub ↗</span>
+                </a>
               </div>
-              <div style="display: flex; gap: 0.4rem; flex-wrap: wrap;">
-                <span class="badge" style="font-size: 0.65rem; background: rgba(255,255,255,0.05);">Vercel Edge</span>
-                <span class="badge" style="font-size: 0.65rem; background: rgba(255,255,255,0.05);">HTTPS SSL</span>
-                <span class="badge" style="font-size: 0.65rem; background: rgba(255,255,255,0.05);">Responsive UI</span>
+
+              <!-- Interactive Hover / Click Indicator -->
+              <div class="web-expand-trigger" id="web-expand-toggle" title="Click or hover to reveal deliverable scope and technical specs">
+                <span class="web-trigger-dot"></span>
+                <span class="web-trigger-text">Deliverable Details</span>
+                <svg class="web-chevron-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
               </div>
             </div>
 
-            <!-- Actions -->
+            <!-- EXPANDABLE DETAILS PANEL (Revealed smoothly on hover / click) -->
+            <div class="web-expandable-section">
+              <div class="web-expandable-content">
+                <div class="web-details-card">
+                  <!-- Scope description -->
+                  <div class="web-scope-box">
+                    <div class="web-scope-header">
+                      <span class="web-scope-tag">DELIVERABLE SCOPE</span>
+                      <span class="web-scope-sub">Academic Milestone Specifications</span>
+                    </div>
+                    <p class="web-scope-text">
+                      Full interactive research portfolio engineered with responsive dual-mode documentation viewer, multi-task dataset audits, real-time client-side emotion &amp; age-gender inference demonstrations, and comprehensive academic supervision details governed by the SLIIT curriculum.
+                    </p>
+                  </div>
+
+                  <!-- Feature highlights grid -->
+                  <div class="web-features-grid">
+                    <div class="web-feature-item">
+                      <span class="web-feature-icon">⚡</span>
+                      <div>
+                        <strong>Sub-40ms Inference</strong>
+                        <p>Zero-cloud client-side WebAssembly execution preserving biometric privacy.</p>
+                      </div>
+                    </div>
+                    <div class="web-feature-item">
+                      <span class="web-feature-icon">📑</span>
+                      <div>
+                        <strong>Interactive Viewer</strong>
+                        <p>Embedded PDF viewer with dual Google Drive &amp; local fallback viewer tabs.</p>
+                      </div>
+                    </div>
+                    <div class="web-feature-item">
+                      <span class="web-feature-icon">📊</span>
+                      <div>
+                        <strong>Empirical Audits</strong>
+                        <p>Detailed performance benchmarks on 2,000+ localized Sri Lankan faces.</p>
+                      </div>
+                    </div>
+                    <div class="web-feature-item">
+                      <span class="web-feature-icon">🛡️</span>
+                      <div>
+                        <strong>SSL &amp; Edge CDN</strong>
+                        <p>Continuous deployment via Vercel Edge with HTTP/3 &amp; 99.9% uptime.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Tech stack tags -->
+                  <div class="web-tags-row">
+                    <span class="web-tag">Vercel Edge</span>
+                    <span class="web-tag">HTTPS SSL</span>
+                    <span class="web-tag">Responsive UI</span>
+                    <span class="web-tag">TensorFlow.js</span>
+                    <span class="web-tag">Face-API.js</span>
+                    <span class="web-tag">YOLO11n</span>
+                    <span class="web-tag">ResNet-50</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MILESTONE 9: PROGRESS PRESENTATION 3 (PP3 / FINAL DEFENSE) -->
+        <div class="milestone-block">
+          <div class="milestone-header">
+            <span class="badge badge-purple">Milestone 09 • Final Progress Review &amp; Defense</span>
+            <h3 class="milestone-title">Research Project Progress Presentation 3 (PP3)</h3>
+            <p class="milestone-desc">Comprehensive final progress review and oral defense slide deck presented to the SLIIT examination panel, demonstrating full pipeline integration, empirical benchmarks, and edge deployment.</p>
+          </div>
+
+          <div class="doc-card doc-card-purple" style="max-width: 22rem;">
+            <div>
+              <span style="font-size: 0.95rem; font-weight: 500; color: #fff; display: block;">Progress Presentation 3</span>
+              <span style="font-size: 0.75rem; color: var(--text-dim); display: block; margin-top: 0.2rem;">PP3 Final Defense Slide Deck</span>
+            </div>
+            <img src="images/pdf-icon.svg" alt="PDF Document" class="doc-pdf-img">
+            <div
+              style="font-size: 0.7rem; font-family: var(--font-mono); color: var(--text-faint); margin-bottom: 0.75rem;">
+              <span>PDF • 20% Evaluation Weightage</span>
+            </div>
             <div class="doc-actions-row">
-              <a href="https://web-mu-blush-90.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-doc-download"
-                style="background: rgba(16,185,129,0.15); border-color: rgba(16,185,129,0.4); color: #6ee7b7; text-decoration: none; font-size: 0.8rem; padding: 0.6rem 1.25rem;">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <line x1="2" y1="12" x2="22" y2="12"></line>
-                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              <button class="btn-doc-preview" data-preview-doc="pp3">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
                 </svg>
-                <span>Visit Live Website ↗</span>
+                <span>Preview</span>
+              </button>
+              <a href="https://drive.google.com/file/d/1E3nODiyeu9psNf9ShanXRIAlx026mGGC/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-doc-download"
+                style="background: rgba(168,85,247,0.15); border-color: rgba(168,85,247,0.3); color: #d8b4fe;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span>Download</span>
               </a>
-              <a href="https://github.com/R26-IT-011/FACEO" target="_blank" rel="noopener noreferrer" class="btn-doc-drive" title="GitHub Codebase" style="text-decoration: none; padding: 0.6rem 1rem;">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                <span style="font-size: 0.75rem; margin-left: 0.35rem;">GitHub ↗</span>
+              <a href="https://drive.google.com/file/d/1E3nODiyeu9psNf9ShanXRIAlx026mGGC/view?usp=sharing"
+                target="_blank" rel="noopener noreferrer" class="btn-doc-drive" title="Google Drive">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
               </a>
             </div>
           </div>
