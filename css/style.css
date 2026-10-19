@@ -2412,6 +2412,23 @@ img, svg {
   box-shadow: 0 0 14px rgba(16, 185, 129, 0.7);
 }
 
+.milestone-timeline-item.ongoing .milestone-timeline-dot {
+  border-color: #f59e0b;
+  box-shadow: 0 0 16px rgba(245, 158, 11, 0.85);
+  animation: pulseAmber 2s infinite ease-in-out;
+}
+
+@keyframes pulseAmber {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(245, 158, 11, 0.6);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(245, 158, 11, 0.95);
+    transform: scale(1.15);
+  }
+}
+
 .milestone-timeline-card {
   padding: 1.4rem 1.6rem;
   border-radius: 1.15rem;
@@ -2468,6 +2485,22 @@ img, svg {
   background: rgba(16, 185, 129, 0.12);
   border: 1px solid rgba(16, 185, 129, 0.35);
   color: #34d399;
+}
+
+.milestone-status-pill.ongoing {
+  background: rgba(245, 158, 11, 0.15);
+  border: 1px solid rgba(245, 158, 11, 0.45);
+  color: #fbbf24;
+}
+
+.status-pulse-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #f59e0b;
+  box-shadow: 0 0 8px #f59e0b;
+  display: inline-block;
+  animation: pulse 1.5s infinite;
 }
 
 .milestone-title-text {
